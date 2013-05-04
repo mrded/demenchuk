@@ -3,10 +3,11 @@ GEM
   specs:
     haml (4.0.2)
       tilt
+    scorched (0.11)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   haml
-
+  scorched
