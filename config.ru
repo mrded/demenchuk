@@ -4,11 +4,10 @@ class App < Scorched::Controller
 
   render_defaults.merge!(
     engine: :haml,
-    layout: :index
   )
 
   get '/' do
-   render :index
+   render :index, layout: :layout
   end
 end
 run App

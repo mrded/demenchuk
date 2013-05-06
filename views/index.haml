@@ -1,1 +1,34 @@
-%h1 hello world
+.row-fluid
+  #about.span2
+    %img.img-polaroid.media-object{:src => "/images/demenchuk.jpg"}
+
+    %blockquote
+      %small I'm a Software Engineer with over 5 years of experience in web development.
+
+  .span10
+    = render :technology
+
+    %hr
+    .progress.progress-striped
+      .bar.bar-info{:style => "width: 30%;"} Frontend
+      .bar.bar-success{:style => "width: 50%;"} Backend
+      .bar.bar-danger{:style => "width: 20%;"} System Administration
+
+= render :skills
+
+%h3 Open Source Projects
+.row-fluid
+  .span10
+    .span6= render :opensource, content: @opensourceDrupal
+    .span6= render :opensource, content: @opensource
+  .span2
+    %blockquote
+      %small Proin blandit laoreet quam a consectetur. Phasellus ut dui et metus iaculis pulvinar. Pellentesque molestie, turpis non sodales tincidunt, nunc nisi consequat massa, ac tempor lorem lorem ut velit.
+
+%h3 Worked For/With
+.row-fluid
+  .span2
+    %blockquote.pull-right
+      %small Donec aliquet dictum facilisis. Pellentesque diam urna, vehicula eu vehicula eget, pretium vel libero. Pellentesque ornare eleifend magna, a consectetur nisl bibendum sit amet.
+
+  .span10= render :clients
