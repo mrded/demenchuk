@@ -2,10 +2,10 @@ Demenchuk
 ========
 Personal web site with portfolio.
 
-## Requirements
+#### Requirements
 * Ruby 2.0.0
 
-## Deploy to Heroku:
+#### Deploy to Heroku:
 
     heroku create
     git push heroku master
