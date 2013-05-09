@@ -2,8 +2,10 @@ Demenchuk
 ========
 Personal web site with portfolio.
 
-#### Requirements
-* Ruby 2.0.0
+#### What's inside?
+* [Ruby](http://www.ruby-lang.org) 2
+* [Scorched](http://scorchedrb.com) 
+* [Bootstrap](http://twitter.github.io/bootstrap/) 3
 
 #### Deploy to Heroku:
 
