@@ -10,12 +10,7 @@ class App < Scorched::Controller
 
   get '/' do
     # Skills.
-    @frontend  = ['HTML', 'HAML', 'CSS', 'SASS','LESS', 'JavaScript', 'CoffeeScript', 'jQuery', 'AJAX', 'Bootstrap']
-    @backend   = ['Drupal', 'PHP', 'MySQL', 'SaaS', 'Ruby on Rails', 'Ruby', 'Python']
-    @testing   = ['SimpleTest', 'Behat', 'Cucumber']
-    @mobile    = ['PhoneGap', 'jQuery Mobile', 'Backbonejs', 'Spinejs', 'Emberjs']
-    @sys_admin = ['Linux', 'Bash', 'Nginx', 'Apache', 'Varnish', 'Chef', 'Drush', 'High Performance Optimization', 'Rackspace Cloud', 'Amazon Web Services', 'Heroku', 'Pantheon']
-    @teamwork  = ['BDD', 'TDD', 'Git', 'Mercurial', 'Subversion']
+    @skills = getSkills
 
     # OpenSource
     @opensource = getOpensource()
@@ -25,7 +20,32 @@ class App < Scorched::Controller
   end
 
   def getSkills
-
+    [
+      {
+        name: 'Frontend',
+        items: ['HTML', 'HAML', 'CSS', 'SASS','LESS', 'JavaScript', 'CoffeeScript', 'jQuery', 'AJAX', 'Bootstrap'],
+      },
+      {
+        name: 'Backend',
+        items: ['Drupal', 'PHP', 'MySQL', 'SaaS', 'Ruby on Rails', 'Ruby', 'Python'],
+      },
+      {
+        name: 'Testing',
+        items: ['SimpleTest', 'Behat', 'Cucumber'],
+      },
+      {
+        name: 'Mobile',
+        items: ['PhoneGap', 'jQuery Mobile', 'Backbonejs', 'Spinejs', 'Emberjs'],
+      },
+      {
+        name: 'System Administration',
+        items: ['Linux', 'Bash', 'Nginx', 'Apache', 'Varnish', 'Chef', 'Drush', 'High Performance Optimization', 'Rackspace Cloud', 'Amazon Web Services', 'Heroku', 'Pantheon'],
+      },
+      {
+        name: 'Teamwork',
+        items: ['BDD', 'TDD', 'Git', 'Mercurial', 'Subversion'],
+      },
+    ]
   end
 
   def getOpensource

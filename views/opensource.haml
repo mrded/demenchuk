@@ -9,7 +9,7 @@
       .accordion-body.collapse.collapse{:id => 'opensource-' + item[:machine_name]}
         .accordion-inner
           - if !item[:image].nil?
-            / %img.img-rounded{:src => "/images/" + item[:image]}
+            %img.img-rounded{:src => item[:image]}
           %br
           = item[:overview]
           %a.btn{:href => item[:url], :style => 'display: block;'} Get more info
