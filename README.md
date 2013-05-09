@@ -2,7 +2,7 @@ Demenchuk
 ========
 Personal web site with portfolio.
 
-#### Keep is simple!
+#### Keep it simple!
 There is no point to build complicated construction for a home page with blog for one person. It should be extremely simple.
 
 #### It's fast!
