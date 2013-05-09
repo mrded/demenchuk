@@ -1,1 +1,14 @@
-%h1 clients
+%ul.ch-grid
+  - @clients.each do |client|
+    %li
+      .ch-item
+        %noindex
+          .ch-info
+            .ch-info-front
+              %img.img-rounded{ src: '/images/' + client[:logo] }
+            .ch-info-back
+              %h4= client[:name]
+              %p= client[:description]
+
+              - client[:projects].each do |project|
+                %a.label.label-info{ href: project[:url] }= project[:name]
