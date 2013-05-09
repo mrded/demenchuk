@@ -2,6 +2,12 @@ Demenchuk
 ========
 Personal web site with portfolio.
 
+#### Keep is simple!
+There is no point to build complicated construction for a home page with blog for one person. It should be extremely simple.
+
+#### It's fast!
+Of course, it's static!
+
 #### What's inside?
 * [Ruby](http://www.ruby-lang.org) 2
 * [Scorched](http://scorchedrb.com) 
