@@ -19,8 +19,8 @@
 %h3 Open Source Projects
 .row-fluid
   .span10
-    /.span6= render :opensource, content: @opensourceDrupal
-    /.span6= render :opensource, content: @opensource
+    .span6= render :opensource, :locals => {content: @opensourceDrupal}
+    .span6= render :opensource, :locals => {content: @opensource}
   .span2
     %blockquote
       %small Proin blandit laoreet quam a consectetur. Phasellus ut dui et metus iaculis pulvinar. Pellentesque molestie, turpis non sodales tincidunt, nunc nisi consequat massa, ac tempor lorem lorem ut velit.

@@ -1,5 +1,7 @@
 require 'scorched'
 class App < Scorched::Controller
+  # render_defaults[:dir] = 'views'
+  # render_defaults[:layout] = :main
   config[:static_dir] = 'static'
 
   render_defaults.merge!(
@@ -19,7 +21,7 @@ class App < Scorched::Controller
     @opensource = getOpensource()
     @opensourceDrupal = getOpensourceDrupal()
 
-   render :index, layout: :layout
+    render :index, layout: :layout
   end
 
   def getSkills
