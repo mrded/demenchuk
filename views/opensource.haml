@@ -1,1 +1,15 @@
-%h1 opensource
+.opensource.accordion
+  - content.each do |item|
+    .accordion-group
+      .accordion-heading
+        %a.accordion-toggle{"data-parent" => ".opensource", "data-toggle" => "collapse", :href => "#opensource-" + item[:machine_name]}
+          %strong= item[:name]
+          %small
+            \- #{item[:type]}
+      .accordion-body.collapse.collapse{:id => 'opensource-' + item[:machine_name]}
+        .accordion-inner
+          - if !item[:image].nil?
+            / %img.img-rounded{:src => "/images/" + item[:image]}
+          %br
+          = item[:overview]
+          %a.btn{:href => item[:url], :style => 'display: block;'} Get more info

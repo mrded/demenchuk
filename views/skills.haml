@@ -1,1 +1,30 @@
-%h1 skills
+.row-fluid
+  .span2
+    %h4 Frontend
+    - @frontend.each do |item|
+      %span.label= item
+
+  .span2
+    %h4 Backend
+    - @backend.each do |item|
+      %span.label= item
+
+  .span2
+    %h4 Testing
+    - @testing.each do |item|
+      %span.label= item
+
+  .span2
+    %h4 Mobile
+    - @mobile.each do |item|
+      %span.label= item
+
+  .span2
+    %h4 System Administration
+    - @sys_admin.each do |item|
+      %span.label= item
+
+  .span2
+    %h4 Teamwork
+    - @teamwork.each do |item|
+      %span.label= item
