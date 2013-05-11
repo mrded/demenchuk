@@ -10,9 +10,9 @@
     %link{:href => "/stylesheets/main.css", :rel => "stylesheet"}
     %meta{:name => "viewport",  :content => "width=device-width, initial-scale=1.0"}
 
-    = render :googleanalytics
+    = render 'sub_templates/googleanalytics'.to_sym
   %body
-    = render :forkme
+    = render 'sub_templates/forkme'.to_sym
     .container
       .page-header
         %h1
@@ -28,5 +28,4 @@
             %a{:href => 'http://demenchuk.me'}
               %img{:src => "/images/signature.png"}
 
-          .social.span6= render :social
-
+          .social.span6= render 'sub_templates/social'.to_sym
