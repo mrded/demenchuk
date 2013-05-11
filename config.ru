@@ -1,5 +1,6 @@
 require 'scorched'
 class App < Scorched::Controller
+  # Include all data files.
   Dir["./data/*.rb"].each {|file| require file }
 
   # render_defaults[:dir] = 'views'
@@ -14,10 +15,12 @@ class App < Scorched::Controller
     # Skills.
     @skills = getSkills
 
-    # OpenSource
-    @opensource = getOpensource()
-    @opensourceDrupal = getOpensourceDrupal()
+    # OpenSource.
+    opensource = getOpensource()
+    @opensourceGeneral = opensource[:general]
+    @opensourceDrupal = opensource[:drupal]
 
+    # Clients.
     @clients = getClients()
 
     render :index, layout: :layout
