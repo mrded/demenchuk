@@ -1,5 +1,5 @@
 .row-fluid
-  - @skills.each do |skill|
+  - content.each do |skill|
     .span2
       %h4= skill[:name]
       - skill[:items].each do |item|

@@ -14,13 +14,13 @@
       .progress-bar.progress-bar-success{:style => "width: 50%;"} Backend
       .progress-bar.progress-bar-danger{:style => "width: 20%;"} System Administration
 
-= render :skills
+= @skills
 
 %h3 Open Source Projects
 .row-fluid
   .span10
-    .span6= render :opensource, :locals => {content: @opensourceDrupal}
-    .span6= render :opensource, :locals => {content: @opensourceGeneral}
+    .span6= @opensourceDrupal
+    .span6= @opensourceGeneral
   .span2
     %blockquote
       %small Proin blandit laoreet quam a consectetur. Phasellus ut dui et metus iaculis pulvinar. Pellentesque molestie, turpis non sodales tincidunt, nunc nisi consequat massa, ac tempor lorem lorem ut velit.
@@ -31,4 +31,4 @@
     %blockquote.pull-right
       %small Donec aliquet dictum facilisis. Pellentesque diam urna, vehicula eu vehicula eget, pretium vel libero. Pellentesque ornare eleifend magna, a consectetur nisl bibendum sit amet.
 
-  .span10= render :clients
+  .span10= @clients

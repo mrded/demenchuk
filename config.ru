@@ -13,15 +13,15 @@ class App < Scorched::Controller
 
   get '/' do
     # Skills.
-    @skills = getSkills
+    @skills = render :skills, locals: {content: getSkills}
 
     # OpenSource.
-    opensource = getOpensource()
-    @opensourceGeneral = opensource[:general]
-    @opensourceDrupal = opensource[:drupal]
+    opensource = getOpensource
+    @opensourceGeneral = render :opensource, locals: {content: opensource[:general]}
+    @opensourceDrupal = render :opensource, locals: {content: opensource[:drupal]}
 
     # Clients.
-    @clients = getClients()
+    @clients = render :clients, locals: {content: getClients}
 
     render :index, layout: :layout
   end
