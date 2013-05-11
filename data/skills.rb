@@ -2,11 +2,11 @@ def getSkills
   [
     {
       name: 'Frontend',
-      items: ['HTML', 'HAML', 'CSS', 'SASS','LESS', 'JavaScript', 'CoffeeScript', 'jQuery', 'AJAX', 'Bootstrap'],
+      items: ['HTML', 'HAML', 'CSS', 'SASS', 'LESS', 'JavaScript', 'CoffeeScript', 'jQuery', 'AJAX', 'Bootstrap'],
     },
     {
       name: 'Backend',
-      items: ['Drupal', 'PHP', 'MySQL', 'SaaS', 'Ruby on Rails', 'Ruby', 'Python'],
+      items: ['Drupal', 'PHP', 'MySQL', 'SaaS', 'Ruby on Rails', 'Scorched', 'Sinatra', 'Ruby', 'Python'],
     },
     {
       name: 'Testing',
