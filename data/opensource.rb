@@ -3,7 +3,6 @@ def getOpensource
     general: [
       {
         name: 'MNPP',
-        group: 'general',
         type: 'Mac + Nginx + Percona + PHP',
         machine_name: 'mnpp',
         url: 'http://getmnpp.org',
@@ -12,7 +11,6 @@ def getOpensource
       },
       {
         name: 'Brew-emp',
-        group: 'general',
         type: '(E)Nginx + MySQL + PHP Installer',
         machine_name: 'brew-emp',
         url: 'https://github.com/mrded/brew-emp',
@@ -20,19 +18,16 @@ def getOpensource
         overview: 'Native way to setup web environment for Mac.',
       },
       {
-        name: 'Stapel rails',
-        group: 'general',
-        type: 'Ruby on Rails gem',
-        machine_name: 'stapel-rails',
-        url: 'https://github.com/mrded/stapel-rails',
-        image: 'http://drupal.org/files/project-images/ThumbnailPileEffect.jpg',
-        overview: 'An experimental jQuery plugin that will group thumbnails by a shared data-attribute into a pile. When clicking on the pile, the thumbnails that belong to that pile will be spread into a grid using CSS transitions.',
+        name: 'Reveally',
+        type: 'Ruby on Rails app',
+        machine_name: 'reveally',
+        url: 'https://github.com/elDante/reveally',
+        overview: 'Alliance website for Eve Online',
       }
     ],
     drupal: [
       {
         name: 'HelloBar',
-        group: 'Drupal',
         type: 'Drupal module',
         machine_name: 'hellobar',
         url: 'http://drupal.org/project/hellobar',
@@ -41,7 +36,6 @@ def getOpensource
       },
       {
         name: 'Blurry',
-        group: 'Drupal',
         type: 'Drupal module',
         machine_name: 'blurry',
         url: 'http://drupal.org/project/blurry',
@@ -50,7 +44,6 @@ def getOpensource
       },
       {
         name: 'Panels Import',
-        group: 'Drupal',
         type: 'Drupal module',
         machine_name:'panels_import',
         url: 'http://drupal.org/project/panels_import',
@@ -59,7 +52,6 @@ def getOpensource
       },
       {
         name: 'Panels Bootstrap Layouts',
-        group: 'Drupal',
         type: 'Drupal module',
         machine_name: 'panels_bootstrap_layouts',
         url: 'http://drupal.org/project/panels_bootstrap_layouts',
@@ -68,7 +60,6 @@ def getOpensource
       },
       {
         name: 'Views Import',
-        group: 'Drupal',
         type: 'Drupal module',
         machine_name: 'views_import',
         url: 'http://drupal.org/project/views_import',
@@ -77,7 +68,6 @@ def getOpensource
       },
       {
         name: 'Views Bootstrap',
-        group: 'Drupal',
         type: 'Drupal module',
         machine_name: 'views_bootstrap',
         url: 'http://drupal.org/project/views_bootstrap',
@@ -85,7 +75,6 @@ def getOpensource
       },
       {
         name: 'Views Stapel',
-        group: 'Drupal',
         type: 'Drupal module',
         machine_name: 'views_stapel',
         url: 'http://drupal.org/project/views_stapel',
@@ -94,7 +83,6 @@ def getOpensource
       },
       {
         name: 'Views Job Board',
-        group: 'Drupal',
         type: 'Drupal module',
         machine_name: 'views_job_board',
         url: 'http://drupal.org/project/views_job_board',
