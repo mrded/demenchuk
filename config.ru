@@ -26,7 +26,23 @@ class App < Scorched::Controller
   end
 
   get '/blog' do
-    render :blog, layout: 'layouts/main'.to_sym
+    require 'date'
+
+    content = []
+
+    Dir["views/blog/*.haml"].each do |file|
+      filename = File.basename(file, ".*")
+      time = Time.at(filename.to_i)
+
+      content << {
+        datetime: time.strftime("%Y-%m-%d %H:%M").to_s,
+        date: time.strftime("%m/%d/%Y"),
+        time: time.strftime("%H:%M"),
+        body: render( ('blog/' + filename).to_sym )
+      }
+    end
+
+    render :blog, layout: 'layouts/main'.to_sym, locals: {content: content}
   end
 
 end
