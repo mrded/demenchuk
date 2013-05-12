@@ -6,6 +6,10 @@
     %script{:src => "/vendor/bootstrap/js/bootstrap.min.js"}
     %link{:href => "/vendor/bootstrap/css/bootstrap.min.css", :rel => "stylesheet"}
     %link{:href => "/vendor/bootstrap/css/bootstrap-responsive.min.css", :rel => "stylesheet"}
+
+    %link{:href => "/vendor/bootstrap/css/prettify.css", :rel => "stylesheet"}
+    %script{:src => "/vendor/bootstrap/js/prettify.js"}
+
     %link{:href => "/stylesheets/projects.css", :rel => "stylesheet"}
     %link{:href => "/stylesheets/main.css", :rel => "stylesheet"}
 
@@ -14,7 +18,7 @@
     %meta{:name => "viewport",  :content => "width=device-width, initial-scale=1.0"}
 
     = render 'sub_templates/googleanalytics'.to_sym
-  %body
+  %body{onload: "prettyPrint()"}
     = render 'sub_templates/forkme'.to_sym
     .container
       .page-header
