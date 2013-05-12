@@ -30,15 +30,16 @@ class App < Scorched::Controller
 
     content = []
 
-    Dir["views/blog/*.haml"].each do |file|
+    Dir["views/blog/*"].each do |file|
       filename = File.basename(file, ".*")
+      fileext = File.extname(file).split('.').last
       time = Time.at(filename.to_i)
 
       content << {
         datetime: time.strftime("%Y-%m-%d %H:%M").to_s,
         date: time.strftime("%m/%d/%Y"),
         time: time.strftime("%H:%M"),
-        body: render( ('blog/' + filename).to_sym )
+        body: render( ('blog/' + filename).to_sym, engine: fileext.to_sym)
       }
     end
 
