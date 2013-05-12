@@ -25,5 +25,9 @@ class App < Scorched::Controller
     render :index, layout: 'layouts/main'.to_sym
   end
 
+  get '/blog' do
+    render :blog, layout: 'layouts/main'.to_sym
+  end
+
 end
 run App
