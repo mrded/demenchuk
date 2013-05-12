@@ -1,0 +1,19 @@
+<h2>Use ~/.bash_aliases</h2>
+<p>Just add to you <i>~/.bash_profile</i>:</p>
+<pre class="prettyprint linenums languague-bash">
+# enable bash_aliases
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
+</pre>
+
+<p>Create new '<i>~/.bash_aliases</i>' file:</p>
+<pre class="prettyprint linenums languague-bash">
+echo "alias drush='/usr/local/bin/drush'" > ~/.bash_aliases
+</pre>
+
+<p>And enable changes:</p>
+<pre class="prettyprint linenums languague-bash">
+source ~/.bash_profile
+source ~/.bash_aliases
+</pre>

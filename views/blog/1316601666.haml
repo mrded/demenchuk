@@ -1,0 +1,7 @@
+%h2 Change variables for current session only
+%p If you want change variables (ex. <i>'example_var'</i>) for current session only, then you can change
+%code $GLOBALS['conf']['example_var']
+
+%p So, if you try <b>variable_get('example_var', '')</b> new value will be returned, but variable table in database not be changed. It is very convenient to use for small hacks.
+
+%p Thanks <a href="http://drupal.org/user/329125">Dmitriy.trt</a> ;)

@@ -1,0 +1,12 @@
+<h2>Sync any configs with iCloud</h2>
+<p>Move files to icloud dir and symlink it.</p>
+<pre class="prettyprint linenums languague-bash">
+mv ~/Library/Application\ Support/Sublime\ Text\ 2/ ~/Library/Mobile\ Documents/
+ln -s ~/Library/Mobile\ Documents/Sublime\ Text\ 2/ ~/Library/Application\ Support/Sublime\ Text\ 2
+</pre>
+
+<p>On your another macs just do:</p>
+<pre class="prettyprint linenums languague-bash">
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 2/
+ln -s ~/Library/Mobile\ Documents/Sublime\ Text\ 2/ ~/Library/Application\ Support/
+</pre>

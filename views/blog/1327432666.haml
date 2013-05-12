@@ -1,0 +1,24 @@
+%h2 Use GIT for patching
+%p
+  Create patches:
+  %br
+  %code $ git clone --branch 6.x-2.x http://git.drupal.org/project/cck.git
+
+%p
+  After your something changes, you need commit it to local repository.
+  %br
+  %code $ git commit -a -m 'comment text'
+
+%p
+  Then now you can create path for this:
+  %br
+  %code $ git format-patch -1
+
+%p
+  Apply patches:
+  %br
+  %code $ git apply 0001-Use-Library-API.patch.txt
+  %br
+  or
+  %br
+  %code $ patch -p1 < 0001-Use-Library-API.patch.txt
