@@ -24,7 +24,7 @@
       .page-header
         %h1
           %a{href:'/'} Dmitry Demenchuk
-          %small \ Web Developer
+          =render 'sub_templates/navigation'.to_sym
 
       .container-fluid= yield
 
