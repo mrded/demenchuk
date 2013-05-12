@@ -2,7 +2,7 @@
   - content.each do |post|
     %li
       %time.cbp_tmtime{:datetime => post[:datetime]}
+        %span= post[:year]
         %span= post[:date]
-        %span= post[:time]
       .cbp_tmicon
       .cbp_tmlabel= post[:body]

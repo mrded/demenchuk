@@ -32,17 +32,15 @@
 .cbp_tmtimeline > li .cbp_tmtime span {
 	display: block;
 	text-align: right;
+	color: #999;
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span:first-child {
 	font-size: 0.9em;
-	color: #999;
-
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
 	font-size: 2.9em;
-	color: #999;
 }
 
 /* Right content */

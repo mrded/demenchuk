@@ -37,13 +37,13 @@ class App < Scorched::Controller
 
       content << {
         datetime: time.strftime("%Y-%m-%d %H:%M").to_s,
-        date: time.strftime("%m/%d/%Y"),
-        time: time.strftime("%H:%M"),
+        year: time.strftime("%Y"),
+        date: time.strftime("%d %b"),
         body: render( ('blog/' + filename).to_sym, engine: fileext.to_sym)
       }
     end
 
-    render :blog, layout: 'layouts/main'.to_sym, locals: {content: content}
+    render :blog, layout: 'layouts/main'.to_sym, locals: {content: content.reverse}
   end
 
 end
