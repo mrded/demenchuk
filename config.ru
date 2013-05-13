@@ -1,14 +1,10 @@
 require 'scorched'
+# Include all data files.
+Dir["./data/*.rb"].each {|file| require file}
 
 class App < Scorched::Controller
-  # Include all data files.
-  Dir["./data/*.rb"].each {|file| require file }
-
   config[:static_dir] = 'static'
-
-  render_defaults.merge!(
-    engine: :haml,
-  )
+  render_defaults[:engine] =  :haml
 
   get '/' do
     # Skills.
@@ -26,8 +22,6 @@ class App < Scorched::Controller
   end
 
   get '/blog' do
-    require 'date'
-
     content = []
 
     Dir["views/blog/*"].each do |file|
