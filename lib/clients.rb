@@ -1,5 +1,6 @@
-def getClients
-  [
+module Demenchuk
+
+  CLIENTS = [
     {
       name: 'WikiJob Ltd',
       logo: 'clients/wikijob.png',

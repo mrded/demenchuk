@@ -1,4 +1,6 @@
-def getOpensource
+module Demenchuk
+
+  OPEN_SOURCE =
   {
     general: [
       {
