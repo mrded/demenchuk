@@ -21,7 +21,11 @@ Of course, it's static!
 
 #### Development
 Run server
-    rake server
+``` bash
+$ rake server
+```
 
 Run console
-    rake console
+``` bash
+$ rake console
+```
