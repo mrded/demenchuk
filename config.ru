@@ -7,15 +7,15 @@ class App < Scorched::Controller
 
   get '/' do
     # Skills.
-    @skills = render 'partials/skills'.to_sym, locals: {content: getSkills}
+    @skills = render 'partials/skills'.to_sym, locals: {content: Demenchuk::SKILLS}
 
     # OpenSource.
-    opensource = getOpensource
+    opensource = Demenchuk::OPEN_SOURCE
     @opensourceGeneral = render 'partials/opensource'.to_sym, locals: {content: opensource[:general]}
     @opensourceDrupal = render 'partials/opensource'.to_sym, locals: {content: opensource[:drupal]}
 
     # Clients.
-    @clients = render 'partials/clients'.to_sym, locals: {content: getClients}
+    @clients = render 'partials/clients'.to_sym, locals: {content: Demenchuk::CLIENTS}
 
     render :index, layout: 'layouts/main'.to_sym
   end

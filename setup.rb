@@ -1,2 +1,3 @@
 # Include all data files.
-Dir["./data/*.rb"].each {|file| require file}
+Dir["./lib/*.rb"].each {|file| require file}
+
