@@ -1,6 +1,5 @@
 require 'scorched'
-# Include all data files.
-Dir["./data/*.rb"].each {|file| require file}
+require './setup'
 
 class App < Scorched::Controller
   config[:static_dir] = 'static'

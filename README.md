@@ -18,3 +18,10 @@ Of course, it's static!
     heroku create
     git push heroku master
     heroku ps:scale web=1
+
+#### Development
+Run server
+    rake server
+
+Run console
+    rake console
