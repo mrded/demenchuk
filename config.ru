@@ -3,7 +3,7 @@ require 'scorched'
 Dir["./data/*.rb"].each {|file| require file}
 
 class App < Scorched::Controller
-  config[:static_dir] = 'static'
+  config[:static_dir] = 'assets'
   render_defaults[:engine] =  :haml
 
   get '/' do
