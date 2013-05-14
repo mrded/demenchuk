@@ -17,14 +17,14 @@
 
     %meta{:name => "viewport",  :content => "width=device-width, initial-scale=1.0"}
 
-    = render 'sub_templates/googleanalytics'.to_sym
+    = render 'partials/googleanalytics'.to_sym
   %body{onload: "prettyPrint()"}
-    = render 'sub_templates/forkme'.to_sym
+    = render 'partials/forkme'.to_sym
     .container
       .page-header
         %h1
           %a{href:'/'} Dmitry Demenchuk
-          =render 'sub_templates/navigation'.to_sym
+          =render 'partials/navigation'.to_sym
 
       .container-fluid= yield
 
@@ -35,4 +35,4 @@
             %a{:href => 'http://demenchuk.me'}
               %img{:src => "/images/signature.png"}
 
-          .social.span6= render 'sub_templates/social'.to_sym
+          .social.span6= render 'partials/social'.to_sym
