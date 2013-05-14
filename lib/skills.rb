@@ -1,5 +1,6 @@
-def getSkills
-  [
+module Demenchuk
+
+  SKILLS = [
     {
       name: 'Frontend',
       items: ['HTML', 'HAML', 'CSS', 'SASS', 'LESS', 'JavaScript', 'CoffeeScript', 'jQuery', 'AJAX', 'Bootstrap'],
