@@ -29,12 +29,16 @@ class App < Scorched::Controller
       time = Time.at(filename.to_i)
 
       content << {
+        time: time,
         datetime: time.strftime("%Y-%m-%d %H:%M").to_s,
         year: time.strftime("%Y"),
         date: time.strftime("%d %b"),
         body: render( ('blog/' + filename).to_sym, engine: fileext.to_sym)
       }
     end
+
+    # Sort by :time
+    content.sort_by! { |a| a[:time] }
 
     render :blog, layout: 'layouts/main'.to_sym, locals: {content: content.reverse}
   end
