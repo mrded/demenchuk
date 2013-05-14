@@ -1,6 +1,6 @@
 require 'scorched'
 # Include all data files.
-Dir["./data/*.rb"].each {|file| require file}
+Dir["./lib/*.rb"].each {|file| require file}
 
 class App < Scorched::Controller
   config[:static_dir] = 'static'
@@ -8,15 +8,15 @@ class App < Scorched::Controller
 
   get '/' do
     # Skills.
-    @skills = render 'sub_templates/skills'.to_sym, locals: {content: getSkills}
+    @skills = render 'sub_templates/skills'.to_sym, locals: {content: Demenchuk::SKILLS}
 
     # OpenSource.
-    opensource = getOpensource
+    opensource = Demenchuk::OPEN_SOURCE
     @opensourceGeneral = render 'sub_templates/opensource'.to_sym, locals: {content: opensource[:general]}
     @opensourceDrupal = render 'sub_templates/opensource'.to_sym, locals: {content: opensource[:drupal]}
 
     # Clients.
-    @clients = render 'sub_templates/clients'.to_sym, locals: {content: getClients}
+    @clients = render 'sub_templates/clients'.to_sym, locals: {content: Demenchuk::CLIENTS}
 
     render :index, layout: 'layouts/main'.to_sym
   end
