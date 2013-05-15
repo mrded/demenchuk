@@ -6,42 +6,21 @@ class App < Scorched::Controller
   render_defaults[:engine] =  :haml
 
   get '/' do
-    # Skills.
-    @skills = render 'partials/skills'.to_sym, locals: {content: Demenchuk::SKILLS}
-
-    # OpenSource.
-    opensource = Demenchuk::OPEN_SOURCE
-    @opensourceGeneral = render 'partials/opensource'.to_sym, locals: {content: opensource[:general]}
-    @opensourceDrupal = render 'partials/opensource'.to_sym, locals: {content: opensource[:drupal]}
-
-    # Clients.
-    @clients = render 'partials/clients'.to_sym, locals: {content: Demenchuk::CLIENTS}
-
-    render :index, layout: 'layouts/main'.to_sym
+    render :index, layout: :'layouts/main'
   end
 
   get '/blog' do
-    content = []
-
-    Dir["views/blog/*"].each do |file|
+    content = Dir["views/blog/*"].inject([]) do |res, file|
       filename = File.basename(file, ".*")
       fileext = File.extname(file).split('.').last
-      time = Time.at(filename.to_i)
-
-      content << {
-        time: time,
-        datetime: time.strftime("%Y-%m-%d %H:%M").to_s,
-        year: time.strftime("%Y"),
-        date: time.strftime("%d %b"),
-        body: render( ('blog/' + filename).to_sym, engine: fileext.to_sym)
+      res << {
+        time: Time.at(filename.to_i),
+        body: render( :"blog/#{filename}", engine: fileext)
       }
-    end
+    end.sort_by! {|a| a[:time] }
 
-    # Sort by :time
-    content.sort_by! { |a| a[:time] }
-
-    render :blog, layout: 'layouts/main'.to_sym, locals: {content: content.reverse}
+    render :blog, locals: { content: content.reverse }, layout: :'layouts/main'
   end
-
 end
+
 run App

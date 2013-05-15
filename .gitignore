@@ -3,3 +3,4 @@
 Cheffile.lock
 cookbooks/
 Rakefile
+.ruby-version
