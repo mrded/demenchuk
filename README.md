@@ -9,9 +9,9 @@ There is no point to build complicated construction for a home page with blog fo
 Of course, it's static!
 
 #### What's inside?
-* [Ruby](http://www.ruby-lang.org) 2
+* [Ruby 2](http://www.ruby-lang.org)
 * [Scorched](http://scorchedrb.com) 
-* [Bootstrap](http://twitter.github.io/bootstrap/) 3
+* [Bootstrap 3](http://twitter.github.io/bootstrap/)
 
 #### Deploy to Heroku:
 
@@ -20,12 +20,16 @@ Of course, it's static!
     heroku ps:scale web=1
 
 #### Development
-Run server
-``` bash
-$ rake server
-```
+You can use vagrant which configs are inside this project.
 
-Run console
-``` bash
-$ rake console
-```
+* Install [Vagrant](http://vagrantup.com)
+* Install chef & librarian: `gem install chef librarian`
+* Install the chef cookbooks: `librarian-chef install`
+* Build the VM: `vagrant up`
+* Login to the VM: `vagrant ssh`
+* Project is located at /vagrant folder: `cd /vagrant`.
+
+When you are done, exit the VM and run the following command to suspend it until later: `vagrant suspend`
+
+* Run server: `rake server`
+* Run console: `rake console`
