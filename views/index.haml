@@ -6,21 +6,21 @@
       %small I'm a Software Engineer with over 5 years of experience in web development.
 
   .span10
-    = render 'partials/technology'.to_sym
+    = render :'partials/technology'
 
     %hr
     .progress.progress-striped
-      .progress-bar.progress-bar-info{:style => "width: 30%;"} Frontend
-      .progress-bar.progress-bar-success{:style => "width: 50%;"} Backend
-      .progress-bar.progress-bar-danger{:style => "width: 20%;"} System Administration
+      - Demenchuk::SKILLS.select{|s| s[:percentage]}.each_with_index do |skill, i|
+        .progress-bar{class: "progress-bar-#{%w(info success danger)[i]}", :style => "width: #{skill[:percentage]};"}= skill[:name]
 
-= @skills
+= render :'partials/skills', locals: { content: Demenchuk::SKILLS }
 
 %h3 Open Source Projects
 .row-fluid
   .span10
-    .span6= @opensourceDrupal
-    .span6= @opensourceGeneral
+    - Demenchuk::OPEN_SOURCE.keys.each do |key|
+      .span6
+        = render :'partials/opensource', locals: { content: Demenchuk::OPEN_SOURCE[key] }
   .span2
     %blockquote
       %small Proin blandit laoreet quam a consectetur. Phasellus ut dui et metus iaculis pulvinar. Pellentesque molestie, turpis non sodales tincidunt, nunc nisi consequat massa, ac tempor lorem lorem ut velit.
@@ -31,4 +31,4 @@
     %blockquote.pull-right
       %small Donec aliquet dictum facilisis. Pellentesque diam urna, vehicula eu vehicula eget, pretium vel libero. Pellentesque ornare eleifend magna, a consectetur nisl bibendum sit amet.
 
-  .span10= @clients
+  .span10= render :'partials/clients', locals: { content: Demenchuk::CLIENTS }
