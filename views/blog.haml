@@ -4,5 +4,5 @@
       %time.cbp_tmtime{ datetime: post[:time].strftime("%Y-%m-%d %H:%M") }
         %span= post[:time].strftime("%Y")
         %span= post[:time].strftime("%d %b")
-      .cbp_tmicon
+      %a.cbp_tmicon{href: '/blog/' + post[:filename]} #
       .cbp_tmlabel= post[:body]

@@ -91,7 +91,6 @@ code {
 	font-size: 1.4em;
 	line-height: 40px;
 	position: absolute;
-	color: #fff;
 	background: #f7f7f7;
 	border-radius: 50%;
 	box-shadow: 0 0 0 8px #999;
@@ -99,6 +98,14 @@ code {
 	left: 20%;
 	top: 0;
 	margin: 0 0 0 -25px;
+}
+
+.cbp_tmtimeline > li a.cbp_tmicon {
+	color: #999;
+}
+
+.cbp_tmtimeline > li a.cbp_tmicon:hover {
+	color: #2a6496;
 }
 
 .cbp_tmicon-phone:before {
