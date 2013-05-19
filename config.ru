@@ -5,6 +5,12 @@ class App < Scorched::Controller
   config[:static_dir] = 'assets'
   render_defaults[:engine] =  :haml
 
+  conditions[:file_exist] = proc {
+    # Get :filename from '/blog/:post'
+    filename = request.fullpath.split('/')[2]
+    File.exist?("views/blog/#{filename}.md")
+  }
+
   get '/' do
     render :index, layout: :'layouts/main'
   end
@@ -22,12 +28,12 @@ class App < Scorched::Controller
     render :blog, layout: :'layouts/main', locals: { content: content.reverse }
   end
 
-  get '/blog/*' do | page |
+  get '/blog/*', file_exist: true do |filename|
     content = [
       {
-        filename: page,
-        time: Time.at(page.to_i),
-        body: render( :"blog/#{page}", engine: :md)
+        filename: filename,
+        time: Time.at(filename.to_i),
+        body: render( :"blog/#{filename}", engine: :md)
       }
     ]
 
