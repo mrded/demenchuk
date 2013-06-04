@@ -8,12 +8,12 @@ module Demenchuk
     },
     {
       name: 'Backend',
-      items: ['Drupal', 'PHP', 'MySQL', 'SaaS', 'Ruby on Rails', 'Scorched', 'Sinatra', 'Ruby', 'Python'],
+      items: ['PHP', 'Drupal', 'MySQL', 'Ruby', 'Ruby on Rails', 'Scorched', 'Sinatra', 'SaaS'],
       percentage: '50%'
     },
     {
       name: 'Testing',
-      items: ['SimpleTest', 'Behat', 'Cucumber'],
+      items: ['BDD', 'TDD', 'SimpleTest', 'Behat', 'Cucumber'],
     },
     {
       name: 'Mobile',
@@ -21,12 +21,12 @@ module Demenchuk
     },
     {
       name: 'System Administration',
-      items: ['Linux', 'Bash', 'Nginx', 'Apache', 'Varnish', 'Chef', 'Drush', 'High Performance Optimization', 'Rackspace Cloud', 'Amazon Web Services', 'Heroku', 'Pantheon'],
+      items: ['Linux', 'Bash', 'ZSH', 'Nginx', 'Apache', 'Varnish', 'Chef', 'Drush', 'High Performance Optimization', 'Rackspace Cloud', 'Amazon Web Services', 'Heroku', 'Pantheon'],
       percentage: '20%'
     },
     {
       name: 'Teamwork',
-      items: ['BDD', 'TDD', 'Git', 'Mercurial', 'Subversion'],
+      items: ['Git', 'Mercurial', 'Subversion'],
     },
   ]
 end
