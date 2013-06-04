@@ -23,7 +23,7 @@ class App < Scorched::Controller
         time: Time.at(filename.to_i),
         body: render( :"blog/#{filename}", engine: :md)
       }
-    end.sort_by! {|a| a[:time] }
+    end.sort_by! { |a| a[:time] }
 
     render :blog, layout: :'layouts/main', locals: { content: content.reverse }
   end
