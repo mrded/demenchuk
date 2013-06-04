@@ -8,7 +8,7 @@ module Demenchuk
     },
     {
       name: 'Backend',
-      items: ['PHP', 'Drupal', 'MySQL', 'Ruby', 'Ruby on Rails', 'Scorched', 'Sinatra', 'SaaS'],
+      items: ['PHP', 'Drupal', 'MySQL', 'Ruby', 'Ruby on Rails', 'Scorched', 'Sinatra', 'SaaS', 'High Performance Optimization'],
       percentage: '50%'
     },
     {
@@ -21,12 +21,12 @@ module Demenchuk
     },
     {
       name: 'System Administration',
-      items: ['Linux', 'Bash', 'ZSH', 'Nginx', 'Apache', 'Varnish', 'Chef', 'Drush', 'High Performance Optimization', 'Rackspace Cloud', 'Amazon Web Services', 'Heroku', 'Pantheon'],
+      items: ['Linux', 'Bash', 'ZSH', 'Nginx', 'Apache', 'Varnish', 'Chef', 'Drush', 'Rackspace Cloud', 'Amazon Web Services', 'Heroku', 'Pantheon'],
       percentage: '20%'
     },
     {
       name: 'Teamwork',
-      items: ['Git', 'Mercurial', 'Subversion'],
+      items: ['Scrum', 'Git', 'Mercurial', 'Subversion'],
     },
   ]
 end
