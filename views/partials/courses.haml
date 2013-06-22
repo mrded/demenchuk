@@ -1,6 +1,7 @@
-- content.each do |course|
-  %a.course{href: course[:url]}
-    %img.img-circle{ src: course[:logo], width: 118, rel:'popover', 'data-placement' => "top", 'data-content' => course[:content], 'data-original-title' => course[:name]}
+.text-center
+  - content.each do |course|
+    %a.course{href: course[:url]}
+      %img.img-circle{ src: course[:logo], width: 118, rel:'popover', 'data-placement' => "top", 'data-content' => course[:content], 'data-original-title' => course[:name]}
 
 :javascript
   $('.course img').hover(function() {
