@@ -1,6 +1,12 @@
-.row-fluid
+.row-fluid.skills
   - content.each do |skill|
     .span2
       %h4= skill[:name]
-      - skill[:items].each do |item|
-        %span.label= item
+      - skill[:expert].each do |item|
+        %span.label.expert= item
+
+      - skill[:widely].each do |item|
+        %span.label.widely= item
+
+      - skill[:familiar].each do |item|
+        %span.label.familiar= item

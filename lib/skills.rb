@@ -3,30 +3,42 @@ module Demenchuk
   SKILLS = [
     {
       name: 'Frontend',
-      items: ['HTML', 'HAML', 'CSS', 'SASS', 'LESS', 'JavaScript', 'CoffeeScript', 'jQuery', 'AJAX', 'Bootstrap'],
+      expert: ['HTML', 'HAML', 'CSS', 'LESS', 'Bootstrap'],
+      widely: ['JavaScript', 'jQuery', 'AJAX'],
+      familiar: ['SASS', 'CoffeeScript'],
       percentage: '30%'
     },
     {
       name: 'Backend',
-      items: ['PHP', 'Drupal', 'MySQL', 'Ruby', 'Ruby on Rails', 'Scorched', 'Sinatra', 'SaaS', 'High Performance Optimization'],
+      expert: ['PHP', 'Drupal', 'MySQL'],
+      widely: ['Ruby', 'Ruby on Rails', 'Scorched', 'High Performance Optimization'],
+      familiar: ['Sinatra', 'SaaS'],
       percentage: '50%'
     },
     {
       name: 'Testing',
-      items: ['BDD', 'TDD', 'SimpleTest', 'Behat', 'Cucumber'],
+      expert: [],
+      widely: ['SimpleTest', 'Behat', 'Cucumber'],
+      familiar: ['BDD', 'TDD'],
     },
     {
       name: 'Mobile',
-      items: ['PhoneGap', 'jQuery Mobile', 'Backbonejs', 'Spinejs', 'Emberjs'],
+      expert: [],
+      widely: [],
+      familiar: ['PhoneGap', 'jQuery Mobile', 'Backbonejs', 'Spinejs', 'Emberjs'],
     },
     {
       name: 'System Administration',
-      items: ['Linux', 'Bash', 'ZSH', 'Nginx', 'Apache', 'Varnish', 'Chef', 'Drush', 'Rackspace Cloud', 'Amazon Web Services', 'Heroku', 'Pantheon'],
+      expert: ['Linux', 'Bash', 'Nginx', 'Apache', 'Drush', 'Heroku', 'Pantheon'],
+      widely: ['ZSH', 'Varnish', 'Chef', 'Rackspace Cloud', 'Amazon Web Services'],
+      familiar: [],
       percentage: '20%'
     },
     {
       name: 'Teamwork',
-      items: ['Scrum', 'Git', 'Mercurial', 'Subversion'],
+      expert: ['Git', 'Subversion'],
+      widely: [],
+      familiar: ['Scrum', 'Mercurial'],
     },
   ]
 end
