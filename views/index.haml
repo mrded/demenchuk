@@ -13,12 +13,14 @@
       - Demenchuk::SKILLS.select{|s| s[:percentage]}.each_with_index do |skill, i|
         .progress-bar{class: "progress-bar-#{%w(info success danger)[i]}", :style => "width: #{skill[:percentage]};"}= skill[:name]
 
-%p Expert krowledge in main front-end/back-end techologies:
-%p Widely using of other technologies:
-%p Also familiar with the following technologies:
-= render :'partials/skills', locals: { content: Demenchuk::SKILLS }
-
-%p Experience with relational databases.
+.row-fluid.skills
+  = render :'partials/skills', locals: { content: Demenchuk::SKILLS }
+  .span2
+    %blockquote
+      %small Description:
+      %span.label.expert Expert krowledge
+      %span.label.widely Widely using
+      %span.label.familiar Familiar
 
 %h3 Open Source Projects
 .row-fluid

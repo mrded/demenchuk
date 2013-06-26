@@ -21,12 +21,12 @@ module Demenchuk
       widely: ['SimpleTest', 'Behat', 'Cucumber'],
       familiar: ['BDD', 'TDD'],
     },
-    {
-      name: 'Mobile',
-      expert: [],
-      widely: [],
-      familiar: ['PhoneGap', 'jQuery Mobile', 'Backbonejs', 'Spinejs', 'Emberjs'],
-    },
+    # {
+    #   name: 'Mobile',
+    #   expert: [],
+    #   widely: [],
+    #   familiar: ['PhoneGap', 'jQuery Mobile', 'Backbonejs', 'Spinejs', 'Emberjs'],
+    # },
     {
       name: 'System Administration',
       expert: ['Linux', 'Bash', 'Nginx', 'Apache', 'Drush', 'Heroku', 'Pantheon'],

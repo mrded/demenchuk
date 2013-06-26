@@ -11,9 +11,9 @@ body {
 .label a { color: #ffffff; }
 .label a:hover { text-decoration: none; }
 
-.skills .label.expert { background-color: #1fac11; }
-.skills .label.widely { background-color: #2eb8ec; }
-.skills .label.familiar { background-color: #2eb8ec; }
+.skills .label.expert { background-color: #459b43; }
+.skills .label.widely { background-color: #d8913a; }
+/*.skills .label.familiar { background-color: #2eb8ec; }*/
 
 .social .label.twitter { background-color: #2eb8ec; }
 .social .label.drupal { background-color: #0074b5; }
