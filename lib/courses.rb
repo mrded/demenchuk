@@ -1,6 +1,12 @@
 module Demenchuk
   COURSES = [
     {
+      name: 'DrupalCon',
+      content: 'Prague 2013',
+      logo: '/images/conferences/drupalcon_prague2013.png',
+      url: 'https://prague2013.drupal.org',
+    },
+    {
       name: 'BerkeleyX',
       content: 'CS169.1x Software as a Service',
       logo: '/images/courses/cs169.1x.png',
