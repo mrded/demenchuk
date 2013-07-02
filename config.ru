@@ -21,7 +21,7 @@ class App < Scorched::Controller
       res << {
         filename: filename,
         time: Time.at(filename.to_i),
-        body: render( :"blog/#{filename}", engine: :md)
+        body: render( :"blog/#{filename}", engine: :md).split(/<hr \/>/)[0]
       }
     end.sort_by! { |a| a[:time] }
 
