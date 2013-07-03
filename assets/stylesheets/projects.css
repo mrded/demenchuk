@@ -71,13 +71,17 @@
   border-radius: 6px;
 }
 
+.ch-info .ch-info-front {
+  background-color: #fff;
+}
+
 .ch-info .ch-info-back {
   -webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
   -moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
   -o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
   -ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
   transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
-  background: #fff;
+  background-color: #fff;
   opacity: 0;
 }
 
