@@ -1,11 +1,11 @@
-.row-fluid
-  #about.span2
+.row
+  #about.col{class:'col-lg-2'}
     %img.img-thumbnail{:src => "/images/demenchuk.jpg"}
 
     %blockquote
       %small I'm a Software Engineer with over 5 years of experience in web development.
 
-  .span10
+  .col{class:'col-lg-10'}
     = render :'partials/technology'
 
     %hr
@@ -13,9 +13,9 @@
       - Demenchuk::SKILLS.select{|s| s[:percentage]}.each_with_index do |skill, i|
         .progress-bar{class: "progress-bar-#{%w(info success danger)[i]}", :style => "width: #{skill[:percentage]};"}= skill[:name]
 
-.row-fluid.skills
+.row.skills
   = render :'partials/skills', locals: { content: Demenchuk::SKILLS }
-  .span2
+  .col{class:'col-lg-2'}
     %blockquote
       %small Description:
       %span.label.expert Expert krowledge
@@ -23,26 +23,25 @@
       %span.label.familiar Familiar
 
 %h3 Open Source Projects
-.row-fluid
-  .span10
+.row
+  .col{class:'col-lg-10'}
     - Demenchuk::OPEN_SOURCE.keys.each do |key|
-      .span6
-        = render :'partials/opensource', locals: { content: Demenchuk::OPEN_SOURCE[key] }
-  .span2
+      .col{class:'col-lg-6'}= render :'partials/opensource', locals: { content: Demenchuk::OPEN_SOURCE[key] }
+  .col{class:'col-lg-2'}
     %blockquote
       %small I am involved in Open Source projects, I love to contribute completed solutions and grow them separately with the help of quality feedbacks from another specialists.
 
 %h3 Worked For/With
-.row-fluid
-  .span2
+.row
+  .col{class:'col-lg-2'}
     %blockquote.pull-right
       %small Donec aliquet dictum facilisis. Pellentesque diam urna, vehicula eu vehicula eget, pretium vel libero. Pellentesque ornare eleifend magna, a consectetur nisl bibendum sit amet.
 
-  .span10= render :'partials/clients', locals: { content: Demenchuk::CLIENTS }
+  .col{class:'col-lg-10'}= render :'partials/clients', locals: { content: Demenchuk::CLIENTS }
 
 %h3 Conferences/Courses
-.row-fluid
-  .span6= render :'partials/courses', locals: { content: Demenchuk::COURSES }
-  .span6
+.row
+  .col{class:'col-lg-6'}= render :'partials/courses', locals: { content: Demenchuk::COURSES }
+  .col{class:'col-lg-6'}
     %blockquote
       %small Praesent metus leo, eleifend sed gravida ac, pellentesque sed risus. Nullam dui justo, eleifend ut tellus nec, sollicitudin rhoncus neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu neque purus. Maecenas orci lacus, porta in dictum eget, facilisis eget neque. Nam ut eros sapien.

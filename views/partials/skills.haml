@@ -1,5 +1,5 @@
 - content.each do |skill|
-  .span2
+  .col{class:'col-lg-2'}
     %h4= skill[:name]
     - skill[:expert].each do |item|
       %span.label.expert= item

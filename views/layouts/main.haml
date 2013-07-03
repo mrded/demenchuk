@@ -26,13 +26,13 @@
           %a{href:'/'} Dmitry Demenchuk
           =render 'partials/navigation'.to_sym
 
-      .container-fluid= yield
+      = yield
 
       %hr
       %footer.footer
-        .row-fluid
-          .span6
+        .row
+          .col{class:'col-lg-6'}
             %a{:href => 'http://demenchuk.me'}
               %img{:src => "/images/signature.png"}
 
-          .social.span6= render 'partials/social'.to_sym
+          .social.col{class:'col-lg-6 text-right'}= render 'partials/social'.to_sym
