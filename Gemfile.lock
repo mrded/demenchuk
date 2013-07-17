@@ -7,7 +7,7 @@ GEM
     rack-accept (0.4.5)
       rack (>= 0.4)
     rdiscount (2.1.6)
-    scorched (0.13)
+    scorched (0.15)
       rack (~> 1.4)
       rack-accept (~> 0.4)
       tilt (~> 1.4)
