@@ -5,7 +5,7 @@ module Demenchuk
       name: 'WikiJob Ltd',
       logo: 'clients/wikijob.png',
       url: 'http://wikijob.co.uk',
-      description: "UK's largest graduate careers website",
+      description: "Leading financial services graduate jobs community",
       projects: [
         {
           name: 'WikiJob',
