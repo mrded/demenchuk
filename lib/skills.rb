@@ -11,7 +11,7 @@ module Demenchuk
     {
       name: 'Backend',
       expert: ['PHP', 'Drupal', 'MySQL'],
-      widely: ['Ruby', 'Ruby on Rails', 'Scorched', 'High Performance Optimization'],
+      widely: ['Ruby', 'Ruby on Rails', 'Scorched', 'PostgreSQL', 'High Performance Optimization'],
       familiar: ['Sinatra', 'SaaS'],
       percentage: '50%'
     },
