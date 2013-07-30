@@ -1,6 +1,4 @@
 .DS_Store
 .vagrant
-Cheffile.lock
-cookbooks/
 Rakefile
 .ruby-version
