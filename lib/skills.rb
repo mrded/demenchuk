@@ -2,18 +2,18 @@ module Demenchuk
 
   SKILLS = [
     {
+      name: 'Backend',
+      expert: ['PHP', 'Drupal', 'MySQL', 'JSON', 'XML'],
+      widely: ['Ruby', 'Ruby on Rails', 'Scorched', 'PostgreSQL', 'High Performance Optimization'],
+      familiar: ['Sinatra', 'SaaS', 'YAML'],
+      percentage: '50%'
+    },
+    {
       name: 'Frontend',
-      expert: ['HTML', 'HAML', 'CSS', 'LESS', 'Bootstrap'],
+      expert: ['HTML', 'HAML', 'CSS', 'LESS'],
       widely: ['JavaScript', 'jQuery', 'AJAX'],
       familiar: ['SASS', 'CoffeeScript'],
       percentage: '30%'
-    },
-    {
-      name: 'Backend',
-      expert: ['PHP', 'Drupal', 'MySQL'],
-      widely: ['Ruby', 'Ruby on Rails', 'Scorched', 'PostgreSQL', 'High Performance Optimization'],
-      familiar: ['Sinatra', 'SaaS'],
-      percentage: '50%'
     },
     {
       name: 'Testing',
