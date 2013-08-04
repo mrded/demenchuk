@@ -2,22 +2,10 @@
 %html
   %head
     %title Dmitry Demenchuk \ Web Developer
-    %script{:src => "/vendor/jquery-1.9.1.min.js", :type => "text/javascript"}
-    %script{:src => "/vendor/bootstrap/js/bootstrap.min.js"}
-    %link{:href => "/vendor/bootstrap/css/bootstrap.min.css", :rel => "stylesheet"}
-    %link{:href => "/vendor/bootstrap/css/bootstrap-responsive.min.css", :rel => "stylesheet"}
-
-    %link{:href => "/vendor/bootstrap/css/prettify.css", :rel => "stylesheet"}
-    %script{:src => "/vendor/bootstrap/js/prettify.js"}
-
-    %link{:href => "/stylesheets/projects.css", :rel => "stylesheet"}
-    %link{:href => "/stylesheets/main.css", :rel => "stylesheet"}
-
-    %link{:href => "/stylesheets/blog.css", :rel => "stylesheet"}
-
-    %meta{:name => "viewport",  :content => "width=device-width, initial-scale=1.0"}
-
-    = render 'partials/googleanalytics'.to_sym
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    = render 'partials/stylesheets'.to_sym
+    = render 'partials/javascripts'.to_sym
   %body{onload: "prettyPrint()"}
     = render 'partials/forkme'.to_sym
     .container
