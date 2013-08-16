@@ -30,6 +30,7 @@ You can use vagrant which configs are inside this project.
 * Build the VM: `$ vagrant up`
 * Login to the VM: `$ vagrant ssh`
 * Project is located at /vagrant folder: `$ cd /vagrant`
+* Change permissions: `$ sudo chown -R vagrant:vagrant /usr/local/rvm/gems/`
 * Install gems: `$ bundle install`
 * Run the project: `$ rackup config.ru`
 
