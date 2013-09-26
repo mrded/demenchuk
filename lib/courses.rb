@@ -19,6 +19,12 @@ module Demenchuk
       url: 'https://s3.amazonaws.com/verify.edx.org/downloads/fb040dd7a280424b90c838a2bbfa9868/Certificate.pdf',
     },
     {
+      name: 'Acquia',
+      content: 'Drupal 7 Search Introduction',
+      logo: '/images/courses/acquia-search_course.png',
+      url: "http://searchtng-acquia.talentlms.com",
+    },
+    {
       name: 'Code School',
       content: 'Ruby Bits',
       logo: '/images/courses/ruby-bits1.png',
