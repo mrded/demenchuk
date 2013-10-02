@@ -1,13 +1,14 @@
-.opensource.accordion
+.opensource.panel-group
   - content.each do |item|
-    .accordion-group
-      .accordion-heading
+    .panel.panel-default
+      .panel-heading
         %a.accordion-toggle{"data-parent" => ".opensource", "data-toggle" => "collapse", :href => "#opensource-" + item[:machine_name]}
           %strong= item[:name]
           %small
             \- #{item[:type]}
-      .accordion-body.collapse.collapse{:id => 'opensource-' + item[:machine_name]}
-        .accordion-inner
+
+      .panel-collapse.collapse{:id => 'opensource-' + item[:machine_name]}
+        .panel-body
           - if !item[:image].nil?
             %img.img-rounded{:src => item[:image]}
           %br
