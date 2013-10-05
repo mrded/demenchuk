@@ -1,16 +1,7 @@
-.opensource.panel-group
-  - content.each do |item|
-    .panel.panel-default
-      .panel-heading
-        %a.accordion-toggle{"data-parent" => ".opensource", "data-toggle" => "collapse", :href => "#opensource-" + item[:machine_name]}
-          %strong= item[:name]
-          %small
-            \- #{item[:type]}
-
-      .panel-collapse.collapse{:id => 'opensource-' + item[:machine_name]}
-        .panel-body
-          - if !item[:image].nil?
-            %img.img-rounded{:src => item[:image]}
-          %br
-          = item[:overview]
-          %a.btn.btn-block.btn-primary{:type => "button", :href => item[:url]} Get more info
+%ul
+- content.each do |item|
+  %li
+    %a{href: item[:url], title:item[:overview]}
+      %strong= item[:name]
+      %small
+        \- #{item[:type]}
