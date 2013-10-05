@@ -39,9 +39,12 @@
 
   .col.col-lg-10= render :'partials/clients', locals: { content: Demenchuk::CLIENTS }
 
-%h3 Conferences/Courses
 .row
-  .col.col-lg-6= render :'partials/courses', locals: { content: Demenchuk::COURSES }
   .col.col-lg-6
-    %blockquote
-      %small Praesent metus leo, eleifend sed gravida ac, pellentesque sed risus. Nullam dui justo, eleifend ut tellus nec, sollicitudin rhoncus neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu neque purus. Maecenas orci lacus, porta in dictum eget, facilisis eget neque. Nam ut eros sapien.
+    %h3 Courses
+    = render :'partials/courses', locals: { content: Demenchuk::COURSES }
+
+  .col.col-lg-6
+    %h3 Conferences
+    = render :'partials/courses', locals: { content: Demenchuk::CONFERENCES }
+

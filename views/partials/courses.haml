@@ -1,11 +1,11 @@
-.text-center
-  - content.each do |course|
-    %a.course{href: course[:url]}
-      %img.img-circle{ src: course[:logo], width: 118, rel:'popover', 'data-placement' => "top", 'data-content' => course[:content], 'data-original-title' => course[:name]}
-
-:javascript
-  $('.course img').hover(function() {
-    $(this).popover('show');
-  }, function(){
-    $(this).popover('hide');
-  });
+- content.each do |course|
+  .panel.panel-default
+    .panel-body
+      .media
+        %a.pull-left{href: "#"}
+          %img.media-object{src: course[:logo], width: 118}
+        .media-body
+          %h4.media-heading
+            = course[:name]
+            %small= course[:course]
+          %p= course[:description]
