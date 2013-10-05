@@ -1,6 +1,6 @@
-%ul
+%ul.list-group
 - content.each do |item|
-  %li
+  %li.list-group-item
     %a{href: item[:url], title:item[:overview]}
       %strong= item[:name]
       %small
