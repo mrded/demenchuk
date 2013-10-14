@@ -3,9 +3,9 @@ module Demenchuk
   SKILLS = [
     {
       name: 'Backend',
-      expert: ['PHP', 'Drupal', 'MySQL', 'JSON', 'XML'],
-      widely: ['Ruby', 'Ruby on Rails', 'Scorched', 'PostgreSQL', 'High Performance Optimization'],
-      familiar: ['Sinatra', 'SaaS', 'YAML'],
+      expert: ['PHP', 'Drupal', 'MySQL', 'JSON', 'XML', 'YAML'],
+      widely: ['Ruby', 'Ruby on Rails', 'Scorched', 'PostgreSQL'],
+      familiar: ['Sinatra', 'SaaS', 'XML-RPC', 'SOAP'],
       percentage: '50%'
     },
     {

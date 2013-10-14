@@ -3,9 +3,13 @@
   %head
     %title Dmitry Demenchuk \ Web Developer
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+
+    / Vendor
+    %link{href: "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", rel: "stylesheet"}/
+    %link{href: "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css", rel: "stylesheet"}/
+
+    = render 'partials/googleanalytics'.to_sym
     = render 'partials/stylesheets'.to_sym
-    = render 'partials/javascripts'.to_sym
   %body{onload: "prettyPrint()"}
     = render 'partials/forkme'.to_sym
     .container
@@ -24,3 +28,8 @@
               %img{:src => "/images/signature.png"}
 
           .social.col{class:'col-lg-6 text-right'}= render 'partials/social'.to_sym
+
+    / jQuery (necessary for Bootstrap's JavaScript plugins)
+    %script{src: "//code.jquery.com/jquery.js"}
+    / Include all compiled plugins (below), or include individual files as needed
+    %script{src: "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
