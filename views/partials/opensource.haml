@@ -1,8 +1,7 @@
-%ul.list-group
+.list-group
 - content.each do |item|
-  %li.list-group-item
-    %a{href: item[:url], title:item[:overview]}
-      %h5.list-group-item-heading
-        = item[:name]
-        %small
-          \- #{item[:type]}
+  %a.list-group-item{href: item[:url], title:item[:overview]}
+    %h5.list-group-item-heading
+      = item[:name]
+      %small
+        \- #{item[:type]}
