@@ -37,7 +37,7 @@ module Demenchuk
       name: '',
       logo: 'clients/adyax.png',
       url: 'http://www.adyax.com/en',
-      description: 'Largest Drupal Shops in Europe with near 100 persons dedicated to Drupal.',
+      description: 'Agency specializing in all Open Source technologies',
       projects: [
 #          {
 #            name: 'Les Editions de la Cigale',
