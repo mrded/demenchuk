@@ -1,28 +1,18 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
+Vagrant.configure('2') do |config|
+  config.vm.box      = 'precise32'
+  config.vm.box_url  = 'http://files.vagrantup.com/precise32.box'
+  config.vm.hostname = 'secularmediums.local'
 
-Vagrant::Config.run do |config|
-  # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "lucid32"
-  config.vm.box_url = "http://files.vagrantup.com/lucid32.box"
+  config.vm.provider 'vmware_fusion' do |v, override|
+    override.vm.box     = 'precise64'
+    override.vm.box_url = 'http://files.vagrantup.com/precise64_vmware.box'
+  end
 
-  config.vm.forward_port 9292, 9292
+  config.vm.network :forwarded_port, guest: 9292, host: 9292
 
-  config.vm.share_folder "app", "/home/vagrant/app", "app/", :create => true
-
-  config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = ["cookbooks"]
-    chef.add_recipe "apt"
-    chef.add_recipe "build-essential"
-    chef.add_recipe "rvm::vagrant"
-    chef.add_recipe "rvm::system"
-    chef.add_recipe "git"
-
-    chef.json.merge!({
-      :rvm => {
-        :default_ruby => 'ruby-2.0.0'
-      }
-    })
+  config.vm.provision :puppet do |puppet|
+    puppet.manifests_path = 'puppet/manifests'
   end
 end
-
