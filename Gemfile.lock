@@ -2,6 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     commonjs (0.2.7)
+    daemons (1.1.9)
+    eventmachine (1.0.3)
     haml (4.0.5)
       tilt
     less (2.5.0)
@@ -14,6 +16,10 @@ GEM
       rack (~> 1.4)
       rack-accept (~> 0.4)
       tilt (~> 1.4)
+    thin (1.6.2)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
     tilt (1.4.1)
 
 PLATFORMS
@@ -24,3 +30,4 @@ DEPENDENCIES
   less
   rdiscount
   scorched
+  thin
