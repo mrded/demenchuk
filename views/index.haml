@@ -2,8 +2,7 @@
   #about.col.col-lg-2.col-md-2.col-sm-3
     %img.img-thumbnail{:src => "/images/demenchuk.jpg"}
 
-  .col.col-lg-10.col-md-10.col-sm-9.panel
-    .panel-body= render :'partials/summary.html'
+  .col.col-lg-10.col-md-10.col-sm-9= render :'partials/social'
 
 %h3 Open Source Projects
 .row
@@ -30,4 +29,3 @@
   .col.col-lg-6.col-md-6
     %h3 Conferences
     = render :'partials/courses', locals: { content: Demenchuk::CONFERENCES }
-

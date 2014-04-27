@@ -15,12 +15,5 @@ body {
 .skills .label.widely { background-color: #cdbb4a; }
 .skills .label.familiar { background-color: #999999; }
 
-.social .label.twitter { background-color: #2eb8ec; }
-.social .label.drupal { background-color: #0074b5; }
-.social .label.odesk { background-color: #15b14b; }
-.social .label.github { background-color: #3e3e3e; }
-.social .label.habrahabr { background-color: #7da0ae; }
-.social .label.linkedin { background-color: #009ec3; }
-.social .label.facebook { background-color: #5e75a7; }
-.social .label.forrst { background-color: #4d6543; }
-.social .label:hover { background-color: #3a87ad; }
+ul.social a { color: #333; }
+ul.social a:hover { color: #428bca; }

@@ -23,12 +23,8 @@
 
       %hr
       %footer.footer
-        .row
-          .col{class:'col-lg-6'}
-            %a{:href => 'http://demenchuk.me'}
-              %img{:src => "/images/signature.png"}
-
-          .social.col{class:'col-lg-6 text-right'}= render 'partials/social'.to_sym
+        %a{:href => 'http://demenchuk.me'}
+          %img{:src => "/images/signature.png"}
 
     / jQuery (necessary for Bootstrap's JavaScript plugins)
     %script{src: "//code.jquery.com/jquery.js"}

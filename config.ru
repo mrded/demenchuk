@@ -16,7 +16,7 @@ class App < Scorched::Controller
   end
 
   get '/contact' do
-    render :contact, layout: :'layouts/main'
+    redirect '/'
   end
 
   get '/blog' do
