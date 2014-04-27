@@ -2,11 +2,12 @@
 %html
   %head
     %title Dmitry Demenchuk \ Web Developer
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
 
     / Vendor
-    %link{href: "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", rel: "stylesheet"}/
-    %link{href: "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css", rel: "stylesheet"}/
+    %link{href: "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", rel: "stylesheet"}
+    %link{href: "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css", rel: "stylesheet"}
+    %link{href: "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", rel: "stylesheet"}
 
     = render 'partials/googleanalytics'.to_sym
     = render 'partials/stylesheets'.to_sym
@@ -32,4 +33,4 @@
     / jQuery (necessary for Bootstrap's JavaScript plugins)
     %script{src: "//code.jquery.com/jquery.js"}
     / Include all compiled plugins (below), or include individual files as needed
-    %script{src: "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
+    %script{src: "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"}
