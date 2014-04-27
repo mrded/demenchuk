@@ -15,6 +15,10 @@ class App < Scorched::Controller
     render :index, layout: :'layouts/main'
   end
 
+  get '/contact' do
+    render :contact, layout: :'layouts/main'
+  end
+
   get '/blog' do
     content = Dir["views/blog/*"].inject([]) do |res, file|
       filename = File.basename(file, ".md")
