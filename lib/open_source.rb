@@ -21,6 +21,21 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'Email Auto Login',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/email_auto_login',
+      },
+      {
+        name: 'Gentle Reminder',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/gentle_reminder',
+      },
+      {
+        name: 'Mandrill Inbound',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/mandrill_inbound',
+      },
+      {
         name: 'HelloBar',
         type: 'Drupal module',
         url: 'http://drupal.org/project/hellobar',
@@ -59,11 +74,6 @@ module Demenchuk
         name: 'Views Job Board',
         type: 'Drupal module',
         url: 'http://drupal.org/project/views_job_board',
-      },
-      {
-        name: 'Email Auto Login',
-        type: 'Drupal module',
-        url: 'http://drupal.org/project/email_auto_login',
       },
       {
         name: 'User Relationship Locator',
