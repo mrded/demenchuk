@@ -5,13 +5,41 @@
   .col.col-lg-10.col-md-10.col-sm-9= render :'partials/social'
 
 %h3 I'm Focusing On Following Languages
-.row
-  .col.col-xs-4.col-sm-4.col-md-4.col-lg-4
-    %img.img-thumbnail{src: "/images/logos/php.png"}
-  .col.col-xs-4.col-sm-4.col-md-4.col-lg-4
-    %img.img-thumbnail{src: "/images/logos/ruby.png"}
-  .col.col-xs-4.col-sm-4.col-md-4.col-lg-4
-    %img.img-thumbnail{src: "/images/logos/js.png"}
+
+%ul#languages.ch-grid
+  %li
+    .ch-item
+      %noindex
+        .ch-info
+          .ch-info-front
+            %img.img-rounded{src: "/images/logos/php.png"}
+          .ch-info-back
+            %h4 PHP
+            %a.label.label-info{ href: 'http://drupal.org' } Drupal
+
+  %li
+    .ch-item
+      %noindex
+        .ch-info
+          .ch-info-front
+            %img.img-rounded{src: "/images/logos/ruby.png"}
+          .ch-info-back
+            %h4 Ruby
+            %a.label.label-info{ href: 'http://rubyonrails.org' } Ruby on Rails
+            %a.label.label-info{ href: 'http://sinatrarb.com' } Sinatra
+            %a.label.label-info{ href: 'http://scorchedrb.com/' } Scorched
+
+  %li
+    .ch-item
+      %noindex
+        .ch-info
+          .ch-info-front
+            %img.img-rounded{src: "/images/logos/js.png"}
+          .ch-info-back
+            %h4 Java Script
+            %a.label.label-info{ href: 'http://jquery.com' } jQuery
+            %a.label.label-info{ href: 'http://angularjs.org' } AngularJS
+            %a.label.label-info{ href: 'http://ionicframework.com/' } ionic
 
 %h3 Open Source Projects
 .row
