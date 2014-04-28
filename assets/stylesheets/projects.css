@@ -15,10 +15,10 @@
 
 .ch-grid:after { clear: both; }
 
-#languages.ch-grid li {width: 250px; height: 250px;}
-#clients.ch-grid li {width: 250px; height: 180px;}
-
 .ch-grid li {
+  width: 250px;
+  height: 180px;
+
   display: inline-block;
   margin: 20px;
 }

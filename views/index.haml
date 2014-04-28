@@ -4,42 +4,27 @@
 
   .col.col-lg-10.col-md-10.col-sm-9= render :'partials/social'
 
-%h3 I'm Focusing On Following Languages
+%h3 I'm mostly focusing on
+.row
+  .col.col-lg-3.col-md-3.col-sm-3.col-xs-6.text-center
+    %img.img-circle.img-responsive.center-block{src: "/images/logos/php.png", title: 'PHP', width: '150'}
+    %a.label.label-info{ href: 'http://drupal.org' } Drupal
 
-%ul#languages.ch-grid
-  %li
-    .ch-item
-      %noindex
-        .ch-info
-          .ch-info-front
-            %img.img-rounded{src: "/images/logos/php.png"}
-          .ch-info-back
-            %h4 PHP
-            %a.label.label-info{ href: 'http://drupal.org' } Drupal
+  .col.col-lg-3.col-md-3.col-sm-3.col-xs-6.text-center
+    %img.img-circle.img-responsive.center-block{src: "/images/logos/ruby.png", title: 'Ruby', width: '150'}
+    %a.label.label-info{ href: 'http://rubyonrails.org' } Ruby on Rails
+    %a.label.label-info{ href: 'http://sinatrarb.com' } Sinatra
+    %a.label.label-info{ href: 'http://scorchedrb.com/' } Scorched
 
-  %li
-    .ch-item
-      %noindex
-        .ch-info
-          .ch-info-front
-            %img.img-rounded{src: "/images/logos/ruby.png"}
-          .ch-info-back
-            %h4 Ruby
-            %a.label.label-info{ href: 'http://rubyonrails.org' } Ruby on Rails
-            %a.label.label-info{ href: 'http://sinatrarb.com' } Sinatra
-            %a.label.label-info{ href: 'http://scorchedrb.com/' } Scorched
+  .col.col-lg-3.col-md-3.col-sm-3.col-xs-6.text-center
+    %img.img-circle.img-responsive.center-block{src: "/images/logos/js.png", title: 'Java Script', width: '150'}
+    %a.label.label-info{ href: 'http://jquery.com' } jQuery
+    %a.label.label-info{ href: 'http://angularjs.org' } AngularJS
+    %a.label.label-info{ href: 'http://ionicframework.com/' } ionic
 
-  %li
-    .ch-item
-      %noindex
-        .ch-info
-          .ch-info-front
-            %img.img-rounded{src: "/images/logos/js.png"}
-          .ch-info-back
-            %h4 Java Script
-            %a.label.label-info{ href: 'http://jquery.com' } jQuery
-            %a.label.label-info{ href: 'http://angularjs.org' } AngularJS
-            %a.label.label-info{ href: 'http://ionicframework.com/' } ionic
+  .col.col-lg-3.col-md-3.col-sm-3.col-xs-6.text-center
+    %img.img-circle.img-responsive.center-block{src: "/images/logos/linux.png", title: 'Linux', width: '150'}
+    %a.label.label-info{ href: 'http://puppetlabs.com' } Puppet
 
 %h3 Open Source Projects
 .row
