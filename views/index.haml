@@ -1,12 +1,12 @@
 .row
-  #about.col-lg-7.col-md-7.col-sm-7
+  #about.col-sm-7
     .panel.panel-default
       .panel-body
         .row
-          .col-lg-4.col-md-4
+          .col-md-4
             %img.img-thumbnail{src: "/images/demenchuk.jpg"}
 
-          .col-lg-8.col-md-8
+          .col-md-8
             %p.lead
               %kbd I'm Full Stack Developer.
             %p.lead Have more than #{Time.now.year - 2002} years of experience in programming and #{Time.now.year - 2008} years out of this period - working as web developer.
@@ -25,7 +25,7 @@
           %li
             %img.img-responsive{src: "/images/logos/angularjs.png", title: 'AngularJS', width: '80'}
 
-  .col-lg-5.col-md-5.col-sm-5= render :'partials/social'
+  .col-sm-5= render :'partials/social'
 
 %h3 I ♥ Open Source
 %blockquote I’m an active member of open source developers’ community. Bellow are some of projects I worked on.
@@ -39,17 +39,13 @@
 
 %h3 Worked For/With
 .row
-  .col.col-lg-2.visible-lg
-    %blockquote.pull-right
-      %small Donec aliquet dictum facilisis. Pellentesque diam urna, vehicula eu vehicula eget, pretium vel libero. Pellentesque ornare eleifend magna, a consectetur nisl bibendum sit amet.
-
-  .col.col-lg-10.col-md-12= render :'partials/clients', locals: { content: Demenchuk::CLIENTS }
+  .col-lg-10.col-md-12.col-md-offset-1= render :'partials/clients', locals: { content: Demenchuk::CLIENTS }
 
 .row
-  .col.col-lg-6.col-md-6
+  .col-md-6
     %h3 Courses
     = render :'partials/courses', locals: { content: Demenchuk::COURSES }
 
-  .col.col-lg-6.col-md-6
+  .col-md-6
     %h3 Conferences
     = render :'partials/courses', locals: { content: Demenchuk::CONFERENCES }
