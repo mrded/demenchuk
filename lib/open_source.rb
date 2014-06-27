@@ -21,6 +21,11 @@ module Demenchuk
         url: 'http://drupal.org/project/email_auto_login',
       },
       {
+        name: 'Entity Visits',
+        type: 'Drupal module',
+        url: 'http://www.drupal.org/project/entity_visits',
+      },
+      {
         name: 'Gentle Reminder',
         type: 'Drupal module',
         url: 'http://drupal.org/project/gentle_reminder',
