@@ -1,7 +1,4 @@
-.list-group
-- content.each do |item|
-  %a.list-group-item{href: item[:url], title:item[:overview]}
-    %h5.list-group-item-heading
-      = item[:name]
-      %small
-        \- #{item[:type]}
+%ul.list-inline
+  - content.each do |item|
+    %li
+      %a.label.label-primary{href:item[:url], title:item[:overview]}= item[:name]

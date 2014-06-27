@@ -12,11 +12,6 @@ module Demenchuk
         name: 'Brew-emp',
         type: '(E)Nginx + MySQL + PHP Installer',
         url: 'https://github.com/mrded/brew-emp',
-      },
-      {
-        name: 'Reveally',
-        type: 'Ruby on Rails app',
-        url: 'https://github.com/elDante/reveally',
       }
     ],
     drupal: [

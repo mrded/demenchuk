@@ -28,13 +28,14 @@
   .col-lg-5.col-md-5.col-sm-5= render :'partials/social'
 
 %h3 I ♥ Open Source
-.row
-  .col.col-lg-10
-    - Demenchuk::OPEN_SOURCE.keys.each do |key|
-      .col.col-lg-6.col-md-6.col-sm-6= render :'partials/opensource', locals: { content: Demenchuk::OPEN_SOURCE[key] }
-  .col.col-lg-2.visible-lg
-    %blockquote
-      %small I’m an active member of open source developers’ society. Helping to develop everything what I use.
+%blockquote I’m an active member of open source developers’ community. Bellow are some of projects I worked on.
+
+%dl.dl-horizontal
+  %dt General
+  %dd= render :'partials/opensource', locals: { content: Demenchuk::OPEN_SOURCE[:general] }
+
+  %dt Drupal
+  %dd= render :'partials/opensource', locals: { content: Demenchuk::OPEN_SOURCE[:drupal] }
 
 %h3 Worked For/With
 .row
