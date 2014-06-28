@@ -30,7 +30,12 @@
           %li
             %img.img-responsive{src: "/images/logos/angularjs.png", title: 'AngularJS', width: '80'}
 
-  .col-sm-5= render :'partials/social'
+  .col-sm-5
+    = render :'partials/social'
+    .row
+      .col-xs-6 If you've found my work particularly useful and want to say thank you:
+      .col-xs-6
+        %script{'data-gittip-username' => "mrded", src: "//gttp.co/v1.js"}
 
 %h3 I ♥ open-source
 %blockquote I’m an active member of open source developers’ community. Bellow are some of projects I worked on.
