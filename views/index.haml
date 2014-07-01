@@ -33,7 +33,9 @@
   .col-sm-5
     = render :'partials/social'
     .row
-      .col-xs-6 If you've found my work particularly useful and want to say thank you:
+      .col-xs-6
+        If you've found my work particularly useful and want to say thank you:
+        %script{'data-gittip-username' => "mrded", 'data-gittip-widget' => "button", src: "//gttp.co/v1.js"}
       .col-xs-6
         %script{'data-gittip-username' => "mrded", src: "//gttp.co/v1.js"}
 
