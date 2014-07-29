@@ -79,6 +79,16 @@ module Demenchuk
         name: 'User Relationship Locator',
         type: 'Drupal module',
         url: 'http://drupal.org/project/user_relationship_locator',
+      },
+      {
+        name: 'Invite User Relationships',
+        type: 'Drupal module',
+        url: 'http://www.drupal.org/project/invite_user_relationships',
+      },
+      {
+        name: 'Invite FBOAuth',
+        type: 'Drupal module',
+        url: 'http://www.drupal.org/project/invite_fboauth',
       }
     ]
   }
