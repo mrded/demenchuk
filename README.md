@@ -1,20 +1,11 @@
 Homstatic
 ========
-Personal web site with portfolio and static blog.
-
-#### Keep it simple!
-There is no point to build complicated construction for a home page with blog for one person. It should be extremely simple.
-
-#### It's fast!
-Of course, it's static!
+Personal web site with portfolio.
 
 #### What's inside?
 * [Ruby 2](http://www.ruby-lang.org)
 * [Scorched](http://scorchedrb.com)
 * [Bootstrap 3](http://twitter.github.io/bootstrap/)
-
-### Create new Blog post
-`$ touch views/blog/$(date +%s).md`
 
 #### Deploy to Heroku
 
