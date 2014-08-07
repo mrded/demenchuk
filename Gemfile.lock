@@ -4,8 +4,6 @@ GEM
     commonjs (0.2.7)
     daemons (1.1.9)
     eventmachine (1.0.3)
-    haml (4.0.5)
-      tilt
     less (2.6.0)
       commonjs (~> 0.2.7)
     rack (1.5.2)
@@ -26,7 +24,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  haml
   less
   rdiscount
   scorched

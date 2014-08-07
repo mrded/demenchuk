@@ -3,7 +3,7 @@ require './setup'
 
 class App < Scorched::Controller
   config[:static_dir] = 'assets'
-  render_defaults[:engine] = :haml
+  render_defaults[:engine] = :erb
 
   get '/' do
     render :index, layout: :'layouts/main'
