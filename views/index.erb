@@ -10,7 +10,7 @@
 
           <div class="col-md-8">
             <p class="lead"><kbd>I'm Full Stack Developer.</kbd></p>
-            <p class="lead">Have more than <abbr title="since 2002">#{Time.now.year - 2002} years</abbr> of experience in programming and <abbr title="since 2008">#{Time.now.year - 2008} years</abbr> out of this period - working as web developer.</p>
+            <p class="lead">Have more than <abbr title="since 2002"><%= Time.now.year - 2002 %> years</abbr> of experience in programming and <abbr title="since 2008"><%= Time.now.year - 2008 %> years</abbr> out of this period - working as web developer.</p>
           </div>
         </div>
 
@@ -35,8 +35,8 @@
 
 <div class="row">
   <div class="col-md-10">
-    <h3>I ♥ open-source</h3>
-    <blockquote>I’m an active member of open source developers’ community. Bellow are some of projects I worked on.</blockquote>
+    <h3>I <i class="fa fa-heart"></i> open-source</h3>
+    <blockquote>I’m an active member of open source developers’ community. Bellow are some of projects I worked on:</blockquote>
     <dl class="dl-horizontal">
       <dt>General</dt>
       <dd><%= render :'partials/opensource', locals: { content: Demenchuk::OPEN_SOURCE[:general] } %></dd>
@@ -63,7 +63,7 @@
     <h3>Courses</h3>
     <%= render :'partials/courses', locals: { content: Demenchuk::COURSES } %>
   </div>
-  
+
   <div class="col-md-6">
     <h3>Conferences</h3>
     <%= render :'partials/courses', locals: { content: Demenchuk::CONFERENCES } %>
