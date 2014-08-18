@@ -2,22 +2,42 @@ module Demenchuk
 
   CLIENTS = [
     {
+      name: 'Health & Social Care Information Centre',
+      logo: 'clients/hscic.png',
+      url: 'http://www.hscic.gov.uk',
+      description: "The national provider of information, data and IT systems for health and social care.",
+      projects: [
+        {
+          name: 'Theatre Codes',
+          url: 'http://www.theatrecodes.co.uk',
+        },
+      ],
+    },
+    {
       name: 'WikiJob Ltd',
       logo: 'clients/wikijob.png',
       url: 'http://wikijob.co.uk',
-      description: "Leading financial services graduate jobs community",
+      description: "Leading financial services graduate jobs community.",
       projects: [
         {
           name: 'WikiJob',
           url: 'http://wikijob.co.uk',
         },
         {
-          name: 'WikiFestivals',
-          url: 'http://www.wikifestivals.com',
-        },
-        {
           name: 'Mission Control',
           url: 'http://missioncontrolhq.com',
+        },
+      ],
+    },
+    {
+      name: 'WikiFestivals',
+      logo: 'clients/wikifestivals.png',
+      url: 'http://www.wikifestivals.com',
+      description: "We are an online community for festival fanatics in the UK and abroad.",
+      projects: [
+        {
+          name: 'WikiFestivals',
+          url: 'http://www.wikifestivals.com',
         },
       ],
     },
@@ -37,7 +57,7 @@ module Demenchuk
       name: '',
       logo: 'clients/adyax.png',
       url: 'http://www.adyax.com/en',
-      description: 'Agency specializing in all Open Source technologies',
+      description: 'Agency specializing in all Open Source technologies.',
       projects: [
 #          {
 #            name: 'Les Editions de la Cigale',
