@@ -2,17 +2,11 @@
   <div class="col-sm-7" id="about">
     <div class="panel panel-default">
       <div class="panel-body">
-
-        <div class="row">
-          <div class="col-md-4">
-            <img class="img-thumbnail" src="/images/demenchuk.jpg"/>
-          </div>
-
-          <div class="col-md-8">
-            <p class="lead"><kbd>I'm Full Stack Developer.</kbd></p>
-            <p class="lead">Have more than <abbr title="since 2002"><%= Time.now.year - 2002 %> years</abbr> of experience in programming and <abbr title="since 2008"><%= Time.now.year - 2008 %> years</abbr> out of this period - working as web developer.</p>
-          </div>
-        </div>
+        <img class="img-thumbnail pull-left" src="/images/demenchuk.jpg" style="margin-right: 20px;"/>  
+        
+        <p class="lead">I'm a full-stack software engineer working, based in London. <br/>I speak English and Russian.</p>
+        <p class="lead">I graduated with a Computer Science degree in 2011 from <a href="http://inter.omgtu.ru">Omsk State Technical University</a>.</p>
+        <p class="lead">In total I have more than <abbr title="since 2002"><%= Time.now.year - 2002 %> years</abbr> of experience in programming and <abbr title="since 2008"><%= Time.now.year - 2008 %> years</abbr> out of this period - working as a web developer.</p>
 
         <ul class="list-inline text-center">
           <li><img class="img-responsive" src="/images/logos/php.png" title="PHP" width="120"/></li>
@@ -36,7 +30,7 @@
 <div class="row">
   <div class="col-md-10">
     <h3>I <i class="fa fa-heart"></i> open-source</h3>
-    <blockquote>I’m an active member of open source developers’ community. Bellow are some of projects I worked on:</blockquote>
+    <blockquote>I love to share my knowledge with people as much as contributing to useful projects</blockquote>
     <dl class="dl-horizontal">
       <dt>General</dt>
       <dd><%= render :'partials/opensource', locals: { content: Demenchuk::OPEN_SOURCE[:general] } %></dd>
