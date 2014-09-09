@@ -17,7 +17,7 @@ module Demenchuk
       name: 'WikiJob Ltd',
       logo: 'clients/wikijob.png',
       url: 'http://wikijob.co.uk',
-      description: "Leading financial services graduate jobs community.",
+      description: "Community platform for student and graduate job seekers in the UK",
       projects: [
         {
           name: 'WikiJob',
@@ -33,7 +33,7 @@ module Demenchuk
       name: 'WikiFestivals',
       logo: 'clients/wikifestivals.png',
       url: 'http://www.wikifestivals.com',
-      description: "We are an online community for festival fanatics in the UK and abroad.",
+      description: "Online community for festival fanatics in the UK and abroad.",
       projects: [
         {
           name: 'WikiFestivals',
