@@ -11,8 +11,13 @@ module Demenchuk
       {
         name: 'Brew-emp',
         type: '(E)Nginx + MySQL + PHP Installer',
-        url: 'https://github.com/mrded/brew-emp',
-      }
+        url: 'http://mrded.github.io/brew-emp/',
+      },
+      {
+        name: 'Theatre Codes',
+        type: 'Mobile app for clinicians to help with finding OPCS-4 procedure codes',
+        url: 'http://mrded.github.io/theatrecodes/',
+      },
     ],
     drupal: [
       {
