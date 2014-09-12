@@ -16,6 +16,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'Stop Spam',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/stop_spam',
+      },
+      {
         name: 'Email Auto Login',
         type: 'Drupal module',
         url: 'http://drupal.org/project/email_auto_login',
