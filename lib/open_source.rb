@@ -21,6 +21,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'Forum Stats',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/forum_stats',
+      },
+      {
         name: 'Stop Spam',
         type: 'Drupal module',
         url: 'http://drupal.org/project/stop_spam',
