@@ -21,6 +21,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'Advanced Forum Bootstrap',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/advanced_forum_bootstrap',
+      },
+      {
         name: 'Forum Stats',
         type: 'Drupal module',
         url: 'http://drupal.org/project/forum_stats',
