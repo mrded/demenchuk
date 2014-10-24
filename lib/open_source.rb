@@ -21,6 +21,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'Views Maintenance',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/views_maintenance',
+      },
+      {
         name: 'Advanced Forum Bootstrap',
         type: 'Drupal module',
         url: 'http://drupal.org/project/advanced_forum_bootstrap',
