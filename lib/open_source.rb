@@ -14,12 +14,22 @@ module Demenchuk
         url: 'http://mrded.github.io/brew-emp/',
       },
       {
-        name: 'Theatre Codes',
+        name: 'Theatre Codes app',
         type: 'Mobile app for clinicians to help with finding OPCS-4 procedure codes',
         url: 'http://mrded.github.io/theatrecodes/',
       },
+      {
+        name: 'WikiJob app',
+        type: 'The mobile app designed for students and graduates looking for career opportunities.',
+        url: 'https://github.com/mrded/wikijob',
+      },
     ],
     drupal: [
+      {
+        name: 'Views Random',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/views_random',
+      },
       {
         name: 'Views Maintenance',
         type: 'Drupal module',
