@@ -41,6 +41,11 @@ module Demenchuk
         url: 'http://drupal.org/project/advanced_forum_bootstrap',
       },
       {
+        name: 'Privatemsg Stats',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/privatemsg_stats',
+      },
+      {
         name: 'Forum Stats',
         type: 'Drupal module',
         url: 'http://drupal.org/project/forum_stats',
