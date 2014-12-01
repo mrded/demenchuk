@@ -26,6 +26,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'Embed Import',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/embed_import',
+      },
+      {
         name: 'Views Random',
         type: 'Drupal module',
         url: 'http://drupal.org/project/views_random',
