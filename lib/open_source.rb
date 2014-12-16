@@ -26,6 +26,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'PEAR Wiki Filter',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/pearwiki_filter',
+      },
+      {
         name: 'Embed Import',
         type: 'Drupal module',
         url: 'http://drupal.org/project/embed_import',
