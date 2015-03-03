@@ -26,6 +26,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'Entity Reviews',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/entity_review',
+      },
+      {
         name: 'PEAR Wiki Filter',
         type: 'Drupal module',
         url: 'http://drupal.org/project/pearwiki_filter',
