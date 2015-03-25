@@ -26,6 +26,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'Redis Logging',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/redislog',
+      },
+      {
         name: 'Entity Reviews',
         type: 'Drupal module',
         url: 'http://drupal.org/project/entity_review',
