@@ -26,6 +26,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'PayPal Reports',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/paypal_reports',
+      },
+      {
         name: 'Redis Logging',
         type: 'Drupal module',
         url: 'http://drupal.org/project/redislog',
