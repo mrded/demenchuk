@@ -26,6 +26,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'Light Quiz',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/light_quiz',
+      },
+      {
         name: 'PayPal Reports',
         type: 'Drupal module',
         url: 'http://drupal.org/project/paypal_reports',
