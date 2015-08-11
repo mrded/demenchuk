@@ -23,6 +23,11 @@ module Demenchuk
         type: 'The mobile app designed for students and graduates looking for career opportunities.',
         url: 'https://github.com/mrded/wikijob',
       },
+      {
+        name: 'Pandoc As A Service',
+        type: 'Conversion between markup formats.',
+        url: 'https://github.com/mrded/pandoc-as-a-service',
+      },
     ],
     drupal: [
       {
