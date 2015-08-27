@@ -25,8 +25,13 @@ module Demenchuk
       },
       {
         name: 'Pandoc As A Service',
-        type: 'Conversion between markup formats.',
+        type: 'Service to convert between markup formats.',
         url: 'https://github.com/mrded/pandoc-as-a-service',
+      },
+      {
+        name: 'goPusher',
+        type: 'golang-driven (SSE) Server-Sent Event Service',
+        url: 'https://github.com/mrded/goPusher',
       },
     ],
     drupal: [
