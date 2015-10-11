@@ -1,0 +1,8 @@
+<% content.each do |course| %>
+  <a href="<%= course[:url] %>" class="thumbnail">
+    <div class="caption">
+      <h3><%= course[:name] %></h3>
+    </div>
+    <img src="<%= course[:logo] %>" alt="<%= course[:name] %>">
+  </a>
+<% end %>
