@@ -33,6 +33,11 @@ module Demenchuk
         type: 'golang-driven (SSE) Server-Sent Event Service',
         url: 'https://github.com/mrded/goPusher',
       },
+      {
+        name: 'rulezDate',
+        type: 'Calendar for pebble watch',
+        url: 'https://apps.getpebble.com/applications/55f920b3708b83194f000060',
+      },
     ],
     drupal: [
       {
