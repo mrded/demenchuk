@@ -1,8 +1,12 @@
+<div class="row">
 <% content.each do |course| %>
-  <a href="<%= course[:url] %>" class="thumbnail">
-    <div class="caption">
-      <h3><%= course[:name] %></h3>
-    </div>
-    <img src="<%= course[:logo] %>" alt="<%= course[:name] %>">
-  </a>
+  <div class="col-xs-6">
+    <a href="<%= course[:url] %>" class="thumbnail">
+      <div class="caption">
+        <h3><%= course[:name] %></h3>
+      </div>
+      <img src="<%= course[:logo] %>" alt="<%= course[:name] %>">
+    </a>    
+  </div>
 <% end %>
+</div>
