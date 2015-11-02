@@ -2,7 +2,7 @@ module Demenchuk
   CONFERENCES = [
     {
       name: 'DrupalCon Prague',
-      year: '2013'
+      year: '2013',
       logo: '/images/conferences/drupalcon_prague2013.png',
       url: 'https://prague2013.drupal.org',
     },
