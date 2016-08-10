@@ -41,6 +41,11 @@ module Demenchuk
     ],
     drupal: [
       {
+        name: 'Email UTM',
+        type: 'Drupal module',
+        url: 'http://drupal.org/project/email_utm',
+      },
+      {
         name: 'Light Quiz',
         type: 'Drupal module',
         url: 'http://drupal.org/project/light_quiz',
