@@ -185,6 +185,28 @@ module Demenchuk
         type: 'Drupal module',
         url: 'http://www.drupal.org/project/invite_fboauth',
       }
+    ],
+    javascript: [
+      {
+        name: 'is-url-external',
+        type: 'NPM package',
+        url: 'https://github.com/mrded/is-url-external',
+      },
+      {
+        name: 'machine-name',
+        type: 'NPM package',
+        url: 'https://github.com/mrded/machine-name',
+      },
+      {
+        name: 'waterline-nested',
+        type: 'NPM package',
+        url: 'https://github.com/mrded/waterline-nested',
+      },
+      {
+        name: 'word-link',
+        type: 'NPM package',
+        url: 'https://github.com/mrded/word-link',
+      }
     ]
   }
 end
