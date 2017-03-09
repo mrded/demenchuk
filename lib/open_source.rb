@@ -207,6 +207,85 @@ module Demenchuk
         type: 'NPM package',
         url: 'https://github.com/mrded/word-link',
       }
+    ],
+    contributions: [
+      {
+        name: '#4518',
+        type: 'Discourse',
+        url: 'https://github.com/discourse/discourse/pull/4518',
+      },
+      {
+        name: '#4517',
+        type: 'Discourse',
+        url: 'https://github.com/discourse/discourse/pull/4517',
+      },
+      {
+        name: '#4515',
+        type: 'Discourse',
+        url: 'https://github.com/discourse/discourse/pull/4515',
+      },
+      {
+        name: '#1445',
+        type: 'Waterline',
+        url: 'https://github.com/balderdashy/waterline/pull/1445',
+      },
+      {
+        name: '#19',
+        type: 'angular-addthis',
+        url: 'https://github.com/thisissoon/angular-addthis/issues/19',
+      },
+      {
+        name: '#52',
+        type: 'MNPP',
+        url: 'https://github.com/jyr/MNPP/pull/52',
+      },
+      {
+        name: '#51',
+        type: 'MNPP',
+        url: 'https://github.com/jyr/MNPP/pull/51',
+      },
+      {
+        name: '#58',
+        type: 'MNPP',
+        url: 'https://github.com/jyr/MNPP/pull/58',
+      },
+      {
+        name: '#11',
+        type: 'Scorched',
+        url: 'https://github.com/Wardrop/Scorched/pull/11',
+      },
+      
+      {
+        name: '#2067529',
+        type: 'Drupal',
+        url: 'http://cgit.drupalcode.org/drupal/commit/?id=88db8c57bce93f5ddd0b5daa678dcaf0eb622a2f',
+      },
+      
+      {
+        name: '#1978938',
+        type: 'Drupal',
+        url: 'http://cgit.drupalcode.org/drupal/commit/?id=43bde68d1a90761babdcb2c61121afba450d7179',
+      }, 
+      {
+        name: '#1987572',
+        type: 'Drupal',
+        url: 'http://cgit.drupalcode.org/drupal/commit/?id=61de49623b158e970bdf7ced18e81aea8682af35',
+      },
+      {
+        name: '#1763964',
+        type: 'Drupal',
+        url: 'http://cgit.drupalcode.org/drupal/commit/?id=61e09de',
+      },
+      {
+        name: '#516790',
+        type: 'Drupal',
+        url: 'https://www.drupal.org/node/516790',
+      },
+      {
+        name: '#516790',
+        type: 'Drupal',
+        url: 'https://www.drupal.org/node/516790',
+      }
     ]
   }
 end
