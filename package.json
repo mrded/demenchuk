@@ -1,0 +1,17 @@
+{
+  "name": "demenchuk",
+  "version": "1.0.0",
+  "description": "N11 2ND in da house",
+  "main": "index.js",
+  "author": "Dmitry Demenchuk <dmitry@demenchuk.me>",
+  "homepage": "http://demenchuk.me",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "scripts": {
+    "start": "node server.js $PORT"
+  }
+}
