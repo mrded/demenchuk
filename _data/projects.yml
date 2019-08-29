@@ -1,0 +1,14 @@
+- layout: top-middle
+  name: Pandoc As A Service 
+  link: github.com/mrded/pandoc-as-a-service 
+  description: | # this will include new lines to allow paragraphs
+    If you need to convert text from one markup format into another, pandoc is your swiss-army knife. Basically I wrapped [Pandoc](https://pandoc.org/) in a web service.
+
+- layout: top-middle
+  name: RPI Chat 
+  link: github.com/mrded/rpi-chat 
+  quote: >
+    Portable WiFi Hotspot with a chat 
+  description: | # this will include new lines to allow paragraphs
+    You probably noticed that there is no internet connection in some very important places such as tube's tunnel or any lower ground floor.
+    Why don't we create one? Perhaps it is not a real internet - but something else. The idea is to create WiFi hotspot with a chat and get to know who is around.

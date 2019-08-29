@@ -1,0 +1,53 @@
+- layout: left
+  company: MyBuilder 
+  link: mybuilder.com 
+  dates: January 2019 - Present 
+  quote: >
+    MyBuilder is a growing startup in London that help Homeowners find good tradesmen and we also support tradesmen to ensure they have a steady flow of work.
+  description: | # this will include new lines to allow paragraphs
+    Being a Senior Software Engineer I'm responsible for implementing new functionality the same as bug fixing, addressing technical debt, refactoring and increasing automated test coverage.
+
+- layout: left
+  company: WikiJob Ltd 
+  link: wikijob.co.uk 
+  # job_title: Senior Network System Administrator
+  dates: August 2010 – January 2019
+  quote: >
+    A careers advice, jobs board and forum for graduate job seekers, with over 6 million annual unique visitors (making it one of the largest such sites in the UK). 
+  description: | # this will include new lines to allow paragraphs
+    I started as an individual contributor, then over time I become head of technology.
+    I was responsible for the development and delivery of all aspects of technology services.
+    Leading a team of developers as well as working in cooperation with sales and marketing teams.
+    Productively communicate with non-technical colleagues evaluating IT requests from them and coming up with efficient, time and human hours saving solutions.
+
+- layout: left
+  company: Adyax 
+  link: adyax.com 
+  dates: May 2009 – December 2009 
+  quote: >
+    Adyax is a global digital agency specializing in enterprise Drupal applications, design, and support.
+  description: | # this will include new lines to allow paragraphs
+    I have experience as a Web Developer in a French Open Source company, where we have developed a social network based on Drupal 6 integrated with an e-commerce (Magento).
+
+- layout: left
+  company: NAEYC 
+  link: naeyc.org 
+  dates: February 2008 - May 2009 
+  quote: >
+    Corporate national portal of National Association for the Education of Young Children.
+  description: | # this will include new lines to allow paragraphs
+    Have developed a web-site which includes e-commerce integrated with internal documents flow system. Multiple websites with shared user database (Drupal 5).
+
+- layout: left
+  company: Development Mill 
+  dates: February 2008 – February 2011 
+  quote: >
+    An offshore software development provider where I was developing projects for US and Europe’s startup companies and small established businesses. 
+  description: | # this will include new lines to allow paragraphs
+    There I gained experience working in a team, dealing with a client and using Scrum as a project managing methodology.
+
+- layout: left
+  company: Omsk State Technical University 
+  dates: September 2008 - January 2012 
+  description: | # this will include new lines to allow paragraphs
+    I developed and maintained a technology solution for organising laboratory workflow. It was a video hosting on Linux + website on Drupal created to view and manage video. For security reasons, that system was designed for internal use in local university network only.

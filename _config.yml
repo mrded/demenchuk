@@ -1,0 +1,55 @@
+# Site
+repository: mrded/demenchuk
+# favicon: images/favicon.ico
+
+# Personal info
+name: Dmitry Demenchuk   
+title: Software engineer  
+# email: foo@bar
+# website: demench.uk 
+
+# Social links
+twitter_username: demenchuk 
+github_username: mrded 
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jekyll 
+linkedin_username: mrded 
+# pinterest_username: jekyll
+# youtube_username: jekyll 
+# googleplus_username: +jekyll
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name's Dmitry and I'm a senior software engineer with over 10 years of commercial experience in web development. Quick learner with an ambitious and results driven personality. Involved in many open source contributions. Have a degree in Computer Science.
+
+  Interested in developing software in a team that is focused on high quality product delivery with short release cycles constantly improved by customer feedback. Belief in taking a test driven approach to writing code.
+
+# Projects Section
+# projects_title: Projects
+
+# Experience Section
+# experience_title: Experience
+
+# Education Section
+# educaton_title: Education
+
+# More Section
+# more_title: A Little More About Me
+# more_content: More Content
+
+# Footer
+footer_show_references: true
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag

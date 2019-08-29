@@ -1,6 +1,7 @@
-Demenchuk
-========
-Personal web site with portfolio.
+## Setup
 
-* Install dependencies: `npm i`
-* Run server: `npm start`
+Install jekyll: `gem install jekyll bundler`
+
+## Run
+
+Local server: `bundle exec jekyll serve`
