@@ -39,7 +39,7 @@ about_content: | # this will include new lines to allow paragraphs
 
 # More Section
 # more_title: A Little More About Me
-# more_content: More Content
+more_content: Alongside my interests in software engineering I also like snowboarding & motorcycling.
 
 # Footer
 footer_show_references: true
