@@ -1,4 +1,11 @@
 - layout: left
+  name: University of California, Berkeley 
+  dates: 2012 
+  qualification: Advanced Software as a Service (CS169.1x - CS169.2x) 
+  quote: >
+    The fundamentals for engineering long-lived software using Agile techniques to develop Software as a Service (SaaS) using Ruby on Rails.
+
+- layout: left
   name: Omsk State Tech University 
   dates: 2006 - 2011 
   qualification: B(Hons.) - (UK equivalent), Computer Science 
