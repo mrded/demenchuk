@@ -1,4 +1,20 @@
 - layout: top-middle
+  name: Drupal 
+  link: drupal.org/u/mrded 
+
+- layout: top-middle
+  name: NPM 
+  link: npmjs.com/~mrded 
+
+- layout: top-middle
+  name: Beer Notes App (GIBL) 
+  link: gibl.co.uk 
+  quote: >
+    Allows you to easily rate your favourite beers using many different taste criteria and store your reviews in the app.
+  description: | # this will include new lines to allow paragraphs
+    Mobile app published for both Android and IOS, written initially on [Cordova](https://cordova.apache.org/) + [AngularJS](https://angularjs.org/) + [Ionic](https://ionicframework.com/), then on [React Native](https://facebook.github.io/react-native/).
+
+- layout: top-middle
   name: Pandoc As A Service 
   link: github.com/mrded/pandoc-as-a-service 
   description: | # this will include new lines to allow paragraphs
