@@ -23,6 +23,11 @@
 #   link: https://www.amazon.co.uk/Domain-Driven-Design-Tackling-Complexity-Software-ebook/dp/B00794TAUG 
 
 - layout: top-middle
+  name: 'Fifty Quick Ideas to Improve Your Tests' 
+  author: Gojko Adzic, David Evans, and Tom Roden
+  link: https://www.amazon.co.uk/Fifty-Quick-Ideas-Improve-Tests-ebook/dp/B00XVFFK7E
+
+- layout: top-middle
   name: 'Radical Focus: Achieving Your Most Important Goals with Objectives and Key Results' 
   author: Christina Wodtke
   link: https://www.amazon.co.uk/Radical-Focus-Achieving-Important-Objectives-ebook/dp/B01BFKJA0Y 
