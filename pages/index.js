@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import siteMetadata from '@/data/siteMetadata'
 import experience from '@/data/experience'
 import education from '@/data/education'
@@ -32,6 +33,13 @@ export default function Home() {
           </div>
           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
             <ul className="icons no-print">
+              <li>
+                <Link href="/blog">
+                  <a className="button button--sacnite button--round-l">
+                    <i className="fas fa-pen-alt" title="Blog"></i>
+                  </a>
+                </Link>
+              </li>
               {siteMetadata.twitter && (
                 <li>
                   <a
@@ -184,7 +192,7 @@ export default function Home() {
             </div>
           )}
 
-          {/* More */}
+{/* More */}
           {siteMetadata.moreContent && (
             <div className="container more-container">
               <h3 id="a-little-more-about-me">A Little More About Me</h3>
