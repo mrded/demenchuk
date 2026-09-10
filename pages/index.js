@@ -96,7 +96,7 @@ export default function Home() {
           </div>
 
           {/* Projects */}
-          {projects.length > 0 && (
+          {false && (
             <div className="container projects-container">
               <h3 id="projects">Projects</h3>
               {projects.map((item) => (
@@ -131,6 +131,7 @@ export default function Home() {
                 <div key={item.company} className="row clearfix layout layout-left">
                   <div className="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
                     <h4>{item.company}</h4>
+                    {item.role && <p><b>{item.role}</b></p>}
                     {item.link && (
                       <a
                         href={externalHref(item.link)}
@@ -146,6 +147,13 @@ export default function Home() {
                   <div className="col-xs-12 col-sm-8 col-md-9 col-print-12">
                     {item.quote && <p className="quote">{item.quote}</p>}
                     {item.description && <p>{item.description}</p>}
+                    {item.bullets && (
+                      <ul>
+                        {item.bullets.map((bullet, i) => (
+                          <li key={i}>{bullet}</li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </div>
               ))}
