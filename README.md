@@ -1,7 +1,11 @@
 ## Setup
 
-Install jekyll: `gem install jekyll bundler`
+Install dependencies: `npm install`
 
 ## Run
 
-Local server: `bundle exec jekyll serve`
+Local server: `npm run dev`
+
+## Build
+
+Production build: `npm run build`
