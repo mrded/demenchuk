@@ -9,11 +9,9 @@ const education = [
   {
     name: 'Omsk State Tech University',
     dates: '2006 – 2011',
-    qualification: 'B(Hons.) – (UK equivalent), Computer Science',
-    quote:
-      'Omsk State Technical University (OmSTU) is a scientific-technological university which trains engineers, economists and classical scholars. The University has always focused on the quality and innovation of its teaching and research developing a fruitful relationship with business and productive world by means of experimental research and technological transfer.',
+    qualification: 'B(Hons.) – (UK equivalent), Higher Education Diploma in Software Engineering of Computer Science',
     description:
-      'During my time at the university I learnt most of my key skills that have I have taken through my career.',
+      'During my time at the university I learnt most of my key skills that I have taken through my career. University publication: "Design scalable infrastructure for a website with high load" (2011).',
   },
 ]
 
